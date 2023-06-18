@@ -40,7 +40,7 @@ social:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: https://cdn.staticaly.com/gh/shangy1yi/picx-images-hosting@master/photo.2pkpx2ing3y0.webp
+favicon: img\favicon.ico
 
 # Avatar (頭像)
 avatar:
