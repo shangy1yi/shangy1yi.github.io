@@ -104,4 +104,4 @@ theme: landscape
 deploy:
   type: ''
 
-root: /hexo-template
+
