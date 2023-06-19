@@ -34,9 +34,9 @@ code_word_wrap: false
 # formal:
 #   icon: link || the description || color
 social:
-   fab fa-github: https://github.com/shangy1yi || Github || '#24292e'
+   fab fa-github: https://github.com/shangy1yi || Github || '#4a7dbe'
    fas fa-envelope: mailto:dianeidelozierx@gmail.com || Email || '#4a7dbe'
-
+   fas fa-home: https://www.shangy1yi.tech/ || home || '#4a7dbe'
 # Image (圖片設置)
 # --------------------------------------
 
