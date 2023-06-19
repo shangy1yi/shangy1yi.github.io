@@ -36,7 +36,6 @@ code_word_wrap: false
 social:
    fab fa-github: https://github.com/shangy1yi || Github || '#4a7dbe'
    fas fa-envelope: mailto:dianeidelozierx@gmail.com || Email || '#4a7dbe'
-   fas fa-home: https://www.shangy1yi.tech/ || home || '#4a7dbe'
 # Image (圖片設置)
 # --------------------------------------
 
@@ -231,11 +230,11 @@ aside:
     button:
       enable: true
       icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/xxxxxx
+      text: 个人主页
+      link: https://www.shangy1yi.tech/
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 你好你好！我会在这发发牢骚，分享memes！
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
