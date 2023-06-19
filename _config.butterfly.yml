@@ -234,7 +234,7 @@ aside:
       link: https://www.shangy1yi.tech/
   card_announcement:
     enable: true
-    content: 你好你好！我会在这发发牢骚，分享memes！
+    content: 你好你好！<br>我会在这发发牢骚，分享memes！
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
