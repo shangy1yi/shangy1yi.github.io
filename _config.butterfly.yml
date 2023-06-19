@@ -709,8 +709,8 @@ ClickShowText:
   enable: true
   text:
      - X
-     - X
-     - X
+     - Q
+     - C
   fontSize: 15px
   random: false
   mobile: false
