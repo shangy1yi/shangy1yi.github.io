@@ -406,12 +406,12 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
-  use: Disqus
-  text: true # Display the comment name next to the button
+  use: Livere
+  text: false # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
-  lazyload: true
-  count: true # Display comment count in post's top_img
+  lazyload: false
+  count: false # Display comment count in post's top_img
   card_post_count: false # Display comment count in Home Page
 
 # disqus
@@ -641,10 +641,10 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background:
+background: https://cdn.staticaly.com/gh/shangy1yi/picx-images-hosting@master/IMG_1757---crop-2023-06-19-21-08-16.2rp85jajz7e0.jpeg
 
 # Footer Background
-footer_bg: false
+footer_bg: https://cdn.staticaly.com/gh/shangy1yi/picx-images-hosting@master/IMG_1757---crop-2023-06-19-21-08-16.2rp85jajz7e0.jpeg
 
 # Add mask to header or footer (为 header 或 footer 添加黑色半透遮罩)
 mask:
@@ -671,12 +671,12 @@ activate_power_mode:
 # canvas_ribbon (靜止彩帶背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: false
+  enable: true
   size: 150
   alpha: 0.6
   zIndex: -1
-  click_to_change: false
-  mobile: false
+  click_to_change: true
+  mobile: true
 
 # Fluttering Ribbon (動態彩帶)
 canvas_fluttering_ribbon:
@@ -706,11 +706,11 @@ click_heart:
 
 # Mouse click effects: words (鼠標點擊效果: 文字)
 ClickShowText:
-  enable: false
+  enable: true
   text:
-    # - I
-    # - LOVE
-    # - YOU
+     - X
+     - X
+     - X
   fontSize: 15px
   random: false
   mobile: false
