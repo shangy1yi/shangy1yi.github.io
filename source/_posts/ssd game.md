@@ -1,0 +1,22 @@
+---
+title: 星空只支持SSD固态硬盘
+categories:
+keywords:
+abbrlink:
+date:
+description:
+top_img:
+cover: https://i.imgloc.com/2023/06/19/Vj9zxc.md.jpeg
+---
+
+<center>
+  <h1>星空更新了steam商店页面，目前显示需要125G硬盘空间，且只支持SSD固态硬盘</h1>
+  <br>
+  <a href="https://imgloc.com/i/Vj96MA"><img src="https://i.imgloc.com/2023/06/19/Vj96MA.md.png" alt="Vj96MA.png" border="0" /></a>
+  <br>
+  <p>当时上古卷轴5刚出的时候才十多个G，现在打完mod少说300多个G吧，按照这个比例你这个星空打完mod不得3750个G？到时候DEF三个硬盘红的发亮，装的都是星空是吧🤣---stn<p>
+</center>
+
+
+<br>
+
