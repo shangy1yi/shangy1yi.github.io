@@ -229,7 +229,7 @@ aside:
     description:
     button:
       enable: true
-      icon: fab fa-github
+      icon: fas fa-home
       text: 个人主页
       link: https://www.shangy1yi.tech/
   card_announcement:
