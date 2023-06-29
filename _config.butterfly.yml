@@ -390,13 +390,13 @@ addThis:
 # Share.js
 # https://github.com/overtrue/share.js
 sharejs:
-  enable: true
+  enable: false
   sites: facebook,twitter,wechat,weibo,qq
 
 # AddToAny
 # https://www.addtoany.com/
 addtoany:
-  enable: false
+  enable: true
   item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
 
 # Comments System
@@ -643,7 +643,7 @@ tag_ui: # 留空或 index
 background: https://cdn.staticaly.com/gh/shangy1yi/picx-images-hosting@master/IMG_1757---crop-2023-06-19-21-08-16.2rp85jajz7e0.jpeg
 
 # Footer Background
-footer_bg: https://cdn.staticaly.com/gh/shangy1yi/picx-images-hosting@master/IMG_1757---crop-2023-06-19-21-08-16---crop-2023-06-19-21-27-58.40z3n3i2qfo0.webp
+footer_bg: https://i.imgloc.com/2023/06/29/V33rBJ.png
 
 # Add mask to header or footer (为 header 或 footer 添加黑色半透遮罩)
 mask:
