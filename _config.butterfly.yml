@@ -51,7 +51,7 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://cdn.staticaly.com/gh/shangy1yi/picx-images-hosting@master/IMG_1757---crop-2023-06-19-21-08-16.2rp85jajz7e0.jpeg
+index_img: https://i.imgloc.com/2023/06/29/V33rBJ.png
 
 # If the banner of page not setting, it will show the top_img
 default_top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
