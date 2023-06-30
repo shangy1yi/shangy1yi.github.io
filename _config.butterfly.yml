@@ -34,7 +34,7 @@ code_word_wrap: false
 # formal:
 #   icon: link || the description || color
 social:
-   fab fa-github: https://github.com/shangy1yi || Github || '#4a7dbe'
+#   fab fa-github: https://github.com/shangy1yi || Github || '#4a7dbe'
    fas fa-envelope: mailto:dianeidelozierx@gmail.com || Email || '#4a7dbe'
 # Image (圖片設置)
 # --------------------------------------
@@ -720,7 +720,7 @@ display_mode: dark
 
 # Beautify (美化頁面顯示)
 beautify:
-  enable: false
+  enable: true
   field: post # site/post
   title-prefix-icon: # '\f0c1'
   title-prefix-icon-color: # '#F47466'
