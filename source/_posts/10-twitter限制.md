@@ -6,7 +6,7 @@ abbrlink:
 date: 2023-7-2 8:11:33
 description:
 top_img:
-cover: https://i.imgloc.com/2023/07/01/VRiJ5U.png
+cover: https://i.imgloc.com/2023/07/02/VR3Mvc.png
 ---
 
 <img src="https://i.imgloc.com/2023/07/02/VR3HGV.png" alt="VR3HGV.png" border="0" />
