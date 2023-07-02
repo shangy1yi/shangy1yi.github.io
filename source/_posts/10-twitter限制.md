@@ -9,6 +9,7 @@ top_img:
 cover: https://i.imgloc.com/2023/07/02/VR3aIo.png
 ---
 
+<h1>Twitter is back but f*ck you Elon</h1>
 <img src="https://i.imgloc.com/2023/07/02/VR3HGV.png" alt="VR3HGV.png" border="0" />
 <br>
 <h3>没想到之前传闻的推特要变成付费才能刷推竟然是真的，从昨日开始埃隆马斯克修改推特政策</h3>
