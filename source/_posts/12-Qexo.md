@@ -2,7 +2,6 @@
 abbrlink: ''
 categories:
 - - 杂文快报
-cover: https://i.imgloc.com/2023/07/07/Vmq1mA.png
 date: '2023-07-07T01:52:18.395738+08:00'
 tags: []
 title: Qexo测试
