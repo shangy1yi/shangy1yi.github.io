@@ -13,8 +13,6 @@ updated: 2023-7-12T3:29:37.215+8:0
 
 <img src="https://i.imgloc.com/2023/07/12/VXQk6C.png" alt="VXQk6C.png" border="0" />
 
----
-
 **万众期待啊！终于有这种插件了**
 
 **PureTwitter能自动屏蔽黄推，每天刷新屏蔽列表，并且今天还更新了白名单系统.总结就是-----*方便，好用，快捷***
