@@ -5,7 +5,7 @@ cover: https://i.imgloc.com/2023/07/12/VXQtiQ.png
 date: '2023-07-12T03:00:56.107401+08:00'
 tags: []
 title: Twitter屏蔽黄推
-updated: 2023-7-12T3:0:56.897+8:0
+updated: 2023-7-12T3:29:37.215+8:0
 ---
 # 刷推必装插件---PureTwitter
 
@@ -19,8 +19,10 @@ updated: 2023-7-12T3:0:56.897+8:0
 
 **PureTwitter能自动屏蔽黄推，每天刷新屏蔽列表，并且今天还更新了白名单系统.总结就是-----*方便，好用，快捷***
 
+<a href="https://chrome.google.com/webstore/detail/puretwitter/nflidllhiamnebgbgoemadhhfdpbbpbi" target="_blank">点击安装PureTwitter到谷歌浏览器</a>
+
+
 
 
 <center>
 <img src="https://i.imgloc.com/2023/07/12/VXQWbE.png" alt="VXQWbE.png" border="0" />
-
