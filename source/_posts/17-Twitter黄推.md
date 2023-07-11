@@ -19,10 +19,8 @@ updated: 2023-7-12T3:29:37.215+8:0
 
 **PureTwitter能自动屏蔽黄推，每天刷新屏蔽列表，并且今天还更新了白名单系统.总结就是-----*方便，好用，快捷***
 
+<center>
 <a href="https://chrome.google.com/webstore/detail/puretwitter/nflidllhiamnebgbgoemadhhfdpbbpbi" target="_blank">点击安装PureTwitter到谷歌浏览器</a>
-
-
-
 
 <center>
 <img src="https://i.imgloc.com/2023/07/12/VXQWbE.png" alt="VXQWbE.png" border="0" />
