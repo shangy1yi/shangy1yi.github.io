@@ -103,3 +103,44 @@ theme: stellar
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+
+bangumis:
+  enable: true              # 是否启用
+  path: bangumis/index.html # 生成追番页面的路径
+  show: 1                   # 想看，在看，看完
+  title: 'アニメ'          # 标题
+  quote: 'LOZIERX'        # 格言
+  color_meta: "#FF8A80"        # 追番项元数据的颜色
+  color_summary: "#FF8A80"     # 追番项简介的颜色
+  bgmtv_uid: shangy1yi        # bgm.tv的uid
+  download_image: true      # 下载图片并使用本地图片，否则使用bgm.tv提供的网络图源
+  image_level: l            # 图片高清等级 (l, c, m, s, g)
+  lazyload: false            # 是否开启懒加载
+  margin: 20px              # 封面图的偏移量微调
+
+# Live2D
+## https://github.com/EYHN/hexo-helper-live2d
+live2d:
+  enable: true #开关插件版看板娘
+  scriptFrom: local # 默认
+  # scriptFrom: https://cdn.cbd.int/live2d-widget@3.x/lib/L2Dwidget.min.js # 你的自定义 url
+  tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
+  debug: false # 调试, 是否在控制台输出日志
+  model:
+    use: live2d-widget-model-koharu # npm-module package name
+    # use: https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json # 你的自定义 url
+  display:
+    position: right #控制看板娘位置
+    width: 150 #控制看板娘大小
+    height: 300 #控制看板娘大小
+  mobile:
+    show: false # 手机中是否展示
+
+
+
+# APlayer
+# https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md
+aplayer:
+  meting: true
+  asset_inject: false
