@@ -3300,20 +3300,13 @@ h1.page-title + .tag-cloud-list {
   -ms-transition: all 0.5s;
   transition: all 0.5s;
 }
-#page-header:not(.not-top-img):before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: var(--mark-bg);
-  content: '';
-}
 #page-header.full_page {
-  height: 100vh;
+  height: https;
   background-attachment: fixed;
 }
 #page-header.full_page #site-info {
   position: absolute;
-  top: 43%;
+  top: url("https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/9s6k82c4glab1.7bppvtl17dc0.webp");
   padding: 0 10px;
   width: 100%;
 }
