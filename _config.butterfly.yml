@@ -58,7 +58,7 @@ disable_top_img: false
 index_img: https://github.com/shangy1yi/picx-images-hosting/raw/master/9s6k82c4glab1.7bppvtl17dc0.webp
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
+default_top_img: 
 
 # The banner image of archive page
 archive_img: https://github.com/shangy1yi/picx-images-hosting/raw/master/Snipaste_2023-06-18_12-31-29.6bbk1s273lw0.webp
@@ -910,9 +910,11 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    # - <link rel="stylesheet" href="/xxx.css">
+    #自定义css
+    - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
   bottom:
-    # - <script src="xxxx"></script>
+    # aplayer音乐
+    - <div class="aplayer no-destroy" data-id="8691128047" data-server="netease" data-type="playlist"  data-loop="all" data-order="random" data-volume="0.2" data-fixed="true" data-preload="auto" data-autoplay="false" data-mutex="true" data-theme="#FF8A80" ></div>
 
 # CDN
 # Don't modify the following settings unless you know how they work
