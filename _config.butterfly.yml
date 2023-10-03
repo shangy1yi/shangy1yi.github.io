@@ -54,13 +54,13 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img:
+index_img: https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/9s6k82c4glab1.7bppvtl17dc0.webp
 
 # If the banner of page not setting, it will show the top_img
-default_top_img:
+default_top_img: 
 
 # The banner image of archive page
-archive_img:
+archive_img: 
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
@@ -643,7 +643,7 @@ tag_ui: # 留空或 index
 background: url(https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/9s6k82c4glab1.7bppvtl17dc0.webp)
 
 # Footer Background
-footer_bg: https://github.com/shangy1yi/picx-images-hosting/raw/master/9s6k82c4glab1.7bppvtl17dc0.webp
+footer_bg: false
 
 # Add mask to header or footer (为 header 或 footer 添加黑色半透遮罩)
 mask:
