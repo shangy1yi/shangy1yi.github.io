@@ -3,12 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 賞一々のブログ
-subtitle: '随我探索世界新闻热潮，解读科技的未知奥妙'
+title: 賞一々ブログ
+avatar: https://github.com/shangy1yi/picx-images-hosting/raw/master/wwii_An_logo_that_represents_the_initials_S_and_Ywith_a_modern__861d7506-1e8a-4ec3-bb8f-867ab78aad93.9ftde5xt99c.webp
+favicon: https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/X-(2)---resized-2023-06-27-21-36-40.3ljv21xq1y40.webp
+subtitle: 探索世界新闻热潮 | 解读科技未知奥妙
 description: 'lozier'
 keywords:
 author: 賞一々「しょういち」
-language: en
+language:
+  - zh-CN
+  - en
+  - zh-TW
 timezone: ''
 
 # URL
