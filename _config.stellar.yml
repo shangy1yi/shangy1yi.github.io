@@ -16,7 +16,7 @@ open_graph:
 ######## Sidebar ########
 sidebar:
   logo:
-    avatar: '[config.avatar](/about/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
+    avatar: '[config.avatar](https://www.shangy1yi.tech/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
     title: '[config.title](/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
   menu:
      post: '[btn.blog](/)'
@@ -59,7 +59,7 @@ article:
   # 如果没有指定横幅，是否根据 tags 作为关键词搜索横幅图片？
   auto_banner: false # search from https://source.unsplash.com/
   # 如果没有指定 excerpt 和 description，将自动取多长的内容作为文章摘要？
-  auto_excerpt: 200
+  auto_excerpt: 20
   # 分类颜色
   category_color:
     '探索号': '#f44336'
