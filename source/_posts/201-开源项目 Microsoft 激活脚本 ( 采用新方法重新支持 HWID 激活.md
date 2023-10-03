@@ -2,14 +2,13 @@
 abbrlink: ''
 categories:
 - - 科技&产品
-cover: <img src="https://github.com/shangy1yi/picx-images-hosting/raw/master/image.4t6k6fnvjy80.png"
-  alt="image" />
+cover: https://github.com/shangy1yi/picx-images-hosting/raw/master/image.4t6k6fnvjy80.png
 date: '2023-10-04T00:07:49.567179+08:00'
 tags:
 - 微软
 - hwid
 title: 开源项目 Microsoft 激活脚本 (MAS) 采用新方法重新支持 HWID 激活
-updated: 2023-10-4T0:7:59.405+8:0
+updated: 2023-10-4T0:14:15.118+8:0
 ---
 开源项目 Microsoft 激活脚本 (MAS) 采用新方法重新支持 HWID 激活
 
