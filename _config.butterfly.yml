@@ -34,18 +34,20 @@ code_word_wrap: false
 # formal:
 #   icon: link || the description || color
 social:
-  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
+   fa-brands fa-telegram: https://t.me/SHANGY1YI || telegram || '#4a7dbe'
+   #fa-brands fa-bilibili: https://space.bilibili.com/397168380 || bilibili || '#4a7dbe'
+   fa-brands fa-x-twitter: https://twitter.com/SHANGY1YI || twitter || '#4a7dbe'
+   fas fa-envelope: mailto:dianeidelozierx@gmail.com || Email || '#4a7dbe'
 
 # Image (圖片設置)
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /img/favicon.png
+favicon: https://github.com/shangy1yi/picx-images-hosting/raw/master/X-(2).2t0aisxefuw0.webp
 
 # Avatar (頭像)
 avatar:
-  img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
+  img: https://github.com/shangy1yi/picx-images-hosting/raw/master/wwii_An_logo_that_represents_the_initials_S_and_Ywith_a_modern__861d7506-1e8a-4ec3-bb8f-867ab78aad93.9ftde5xt99c.webp
   effect: false
 
 # Disable all banner image
@@ -88,7 +90,7 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+     - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -844,7 +846,7 @@ pjax:
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: false
+  enable: true
   per_page: true
 
 # Snackbar (Toast Notification 彈窗)
