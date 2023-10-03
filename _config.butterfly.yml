@@ -3,14 +3,15 @@
 # --------------------------------------
 
 nav:
-  logo: # image
+  logo: https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/X-(2)---resized-2023-06-27-21-36-40.2fahtzu81i1w.webp # image
   display_title: true
   fixed: false # fixed navigation bar
 
 # Menu 目錄
 menu:
-  # Home: / || fas fa-home
-  # Archives: /archives/ || fas fa-archive
+  Home: / || fas fa-home
+  Bangumis: /bangumis/ || fas fa-video
+  Archives: /archives/ || fas fa-archive
   # Tags: /tags/ || fas fa-tags
   # Categories: /categories/ || fas fa-folder-open
   # List||fas fa-list:
@@ -637,15 +638,15 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background:
+background: url(https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/9s6k82c4glab1.7bppvtl17dc0.webp)
 
 # Footer Background
-footer_bg: false
+footer_bg: https://github.com/shangy1yi/picx-images-hosting/raw/master/9s6k82c4glab1.7bppvtl17dc0.webp
 
 # Add mask to header or footer (为 header 或 footer 添加黑色半透遮罩)
 mask:
-  header: true
-  footer: true
+  header: false
+  footer: false
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
 rightside_bottom:
