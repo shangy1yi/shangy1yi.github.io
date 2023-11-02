@@ -15,8 +15,10 @@ tags:
 - clash
 - 科学上网
 title: Clash for Windows 开发者删除 Github 对应仓库，并在频道宣布停止更新
-updated: 2023-11-2T22:30:55.620+8:0
+updated: 2023-11-2T22:31:59.435+8:0
 ---
 Clash for Windows 是一个基于 Clash 核心的图形界面代理客户端，运行在 Windows 操作系统上，用户众多。刚才开发者 Fndroid 删除了 Clash for Windows 在 GitHub 仓库中的所有 Releases 包。
 
 Clash for Windows（CFW）是Clash内核的GUI图形化操作界面，这并不意味着Clash内核开发出现问题！请您区分交互界面和内核的区别！请勿传谣错误理解！
+
+![开发者tg频道官宣](https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/image.1xalojqf7hs0.webp)
