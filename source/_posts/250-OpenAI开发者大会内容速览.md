@@ -73,8 +73,5 @@ Text-to-speech (TTS)附带六种人声(tts-1-hd)
 
 ↓输入降低3倍
 ↓输出降低2倍
-
-
-
 {% twitter https://twitter.com/OpenAI/status/1721596740024078340 %}
 
