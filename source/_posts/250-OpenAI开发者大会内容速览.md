@@ -15,12 +15,66 @@ tags:
 - openai
 - chatgpt
 title: OpenAI开发者大会内容速览
-updated: 2023-11-7T18:25:54.691+8:0
+updated: 2023-11-7T18:30:51.355+8:0
 ---
-* 新模型GPT-4 Turbo支持128K上下文，并且比GPT-4有更新鲜的知识。它的输入和输出代币分别比 GPT-4 便宜 3 倍和 2 倍。现在所有开发者都可以使用它的预览版。
-* 助手 API 和新工具（检索、代码解释器）将帮助开发人员在自己的应用程序中构建世界一流的人工智能助手。
+## future
 
-* 平台正在变得多式联运。Turbo with Vision、DALL·E 3 和文本转语音功能现已可供开发人员使用
-* 将 GPT-4 速率限制加倍。
+全新GPT-4 Turbo 128K 上下文
+
+全新 Assistants API
+
+开启 多模态其中包含
+
+- 文 (GPT)
+- 图像（DALL-E3）
+- 语音（TTS）
+
+## Update
+
+更新 GPT-3.5 Turbo 16K 上下文
+
+gpt-3.5-turbo-1106
+
+支持/SON模式（解析能力提升38%）
+
+并行调用函数-支持指令跟踪
+
+## Assistant
+
+代码解释器
+
+- 可运行Python代码及生成图标
+
+检索
+
+- 根据专业检索定制专业GPT
+
+函数调用
+
+- 调用自定义函数合并响应
+
+## Api
+
+GPT-4 Turbo将附带视觉功能(gpt-4-vision-preview)
+
+DALL-E3将通过Images API开放调用(dall-e-3)
+
+Text-to-speech (TTS)附带六种人声(tts-1-hd)
+
+## Price
+
+### 4.0
+
+↓输入降低3倍
+↓输出降低2倍
+↑Limits（限制）翻倍
+
+### 3.0
+
+↓输入降低3倍
+↓输出降低2倍
+
+
 
 {% twitter https://twitter.com/OpenAI/status/1721596740024078340 %}
+
