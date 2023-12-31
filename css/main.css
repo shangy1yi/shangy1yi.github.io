@@ -1654,12 +1654,14 @@ article.md-text.content+.related-wrap {
 .tag-plugin.banner .bottom .subtitle {
   font-size: 0.875rem;
 }
-.tag-plugin.banner:hover img.bg {
-  transform: scale(1.01);
+.tag-plugin.banner {
   transition: transform 2s ease-out;
   -moz-transition: transform 2s ease-out;
   -webkit-transition: transform 2s ease-out;
   -o-transition: transform 2s ease-out;
+}
+.tag-plugin.banner:hover img.bg {
+  transform: scale(1.01);
 }
 .md-text .tag-plugin.checkbox {
   display: flex;
@@ -2398,16 +2400,8 @@ details.folding[child=iframe] >div.body {
   transform: scale(1.2) rotate(8deg);
   box-shadow: 0 2px 4px 0px rgba(0,0,0,0.1), 0 4px 8px 0px rgba(0,0,0,0.1), 0 8px 16px 0px rgba(0,0,0,0.1);
 }
-.tag-plugin.gallery {
-  border-radius: 8px;
-  column-count: 4;
-  column-gap: 0;
-  margin-left: -4px;
-  margin-right: -4px;
-}
 .tag-plugin.gallery .cell {
   display: block;
-  padding: 4px;
   overflow: hidden;
   z-index: 0;
   position: relative;
@@ -2421,20 +2415,17 @@ details.folding[child=iframe] >div.body {
 .tag-plugin.gallery img {
   object-fit: cover;
   max-height: 100%;
-  overflow: hidden;
   display: block;
 }
 .tag-plugin.gallery .image-meta {
   position: absolute;
   z-index: 1;
-  margin: 4px;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   pointer-events: none;
   background: transparent;
-  border-radius: 8px;
   transition: background 0.2s ease-out;
   -moz-transition: background 0.2s ease-out;
   -webkit-transition: background 0.2s ease-out;
@@ -2448,7 +2439,7 @@ details.folding[child=iframe] >div.body {
   font-size: 0.8125rem;
   color: transparent;
   line-height: 1.2;
-  margin: 4px;
+  margin: 0.5rem;
   transition: color 0.2s ease-out;
   -moz-transition: color 0.2s ease-out;
   -webkit-transition: color 0.2s ease-out;
@@ -2456,6 +2447,84 @@ details.folding[child=iframe] >div.body {
 }
 .tag-plugin.gallery .image-meta .image-caption:empty {
   display: none;
+}
+.tag-plugin.gallery[layout='grid'] .cell {
+  transition: transform 0.5s ease-out;
+  -moz-transition: transform 0.5s ease-out;
+  -webkit-transition: transform 0.5s ease-out;
+  -o-transition: transform 0.5s ease-out;
+}
+.tag-plugin.gallery[layout='grid'] .cell:hover img {
+  transform: scale(1.1);
+}
+.tag-plugin.gallery[layout='grid'] {
+  display: grid;
+}
+.tag-plugin.gallery[layout='grid'][size='s'] {
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: 2px;
+}
+.tag-plugin.gallery[layout='grid'][size='s'] .cell,
+.tag-plugin.gallery[layout='grid'][size='s'] img {
+  border-radius: 2px;
+}
+.tag-plugin.gallery[layout='grid'][size='m'] {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 4px;
+}
+.tag-plugin.gallery[layout='grid'][size='m'] .cell,
+.tag-plugin.gallery[layout='grid'][size='m'] img {
+  border-radius: 4px;
+}
+.tag-plugin.gallery[layout='grid'][size='l'] {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 8px;
+}
+.tag-plugin.gallery[layout='grid'][size='l'] .cell,
+.tag-plugin.gallery[layout='grid'][size='l'] img {
+  border-radius: 8px;
+}
+.tag-plugin.gallery[layout='grid'][size='xl'] {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+}
+.tag-plugin.gallery[layout='grid'][size='xl'] .cell,
+.tag-plugin.gallery[layout='grid'][size='xl'] img {
+  border-radius: 16px;
+}
+.tag-plugin.gallery[layout='grid'][size='mix'] {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 4px;
+}
+.tag-plugin.gallery[layout='grid'][size='mix'] .cell,
+.tag-plugin.gallery[layout='grid'][size='mix'] img {
+  border-radius: 4px;
+}
+.tag-plugin.gallery[layout='grid'][size='mix'] .cell:nth-child(3n+1) {
+  grid-column: auto/span 2;
+  grid-row: auto/span 2;
+}
+.tag-plugin.gallery[layout='grid'][ratio='square'] .cell {
+  aspect-ratio: 1;
+}
+.tag-plugin.gallery[layout='grid'] .cell {
+  background: var(--block);
+}
+.tag-plugin.gallery[layout='grid'] .cell img {
+  width: 100%;
+  height: 100%;
+}
+.tag-plugin.gallery[layout='flow'] {
+  column-count: 3;
+  column-gap: 8px;
+}
+.tag-plugin.gallery[layout='flow'] .cell {
+  border-radius: 8px;
+  padding-bottom: 8px;
+}
+.tag-plugin.gallery[layout='flow'] .image-meta {
+  border-radius: 8px;
+  margin-bottom: 8px;
 }
 .tag-plugin.ghcard {
   line-height: 0;
@@ -4342,7 +4411,7 @@ nav.menu a.nav-item:hover {
   padding: 0.5rem;
   font-weight: 500;
   font-size: 0.8125rem;
-  color: var(--text-p2);
+  color: var(--text-p1);
 }
 .widget-wrapper.toc .widget-body .toc .toc-child .toc-item .toc-link {
   padding: 0.25rem 0.5rem 0.25rem 1.3rem;
@@ -4396,6 +4465,18 @@ nav.menu a.nav-item:hover {
 }
 .widget-wrapper.toc a.toc-link.active:before {
   visibility: visible;
+}
+.toc-item a.toc-link+ol {
+  display: none;
+}
+.toc a.toc-link.active+ol {
+  display: block;
+}
+ol:has(> .toc-item a.active) {
+  display: block;
+}
+.doc-tree:hover a.toc-link+ol {
+  display: block;
 }
 .widget-wrapper.toc.multi .widget-header {
   color: var(--text-p1);
