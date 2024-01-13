@@ -783,6 +783,19 @@ svg.loading {
 .loading-wrap.error:after {
   content: '加载失败，请稍后重试。';
 }
+audio,
+video {
+  border-radius: 12px;
+  max-width: 100%;
+}
+video {
+  z-index: 1;
+  box-shadow: 0 12px 16px -4px rgba(0,0,0,0.2);
+}
+.video {
+  line-height: 0;
+  text-align: center;
+}
 pre:not([class]):has(>code) {
   display: block;
   padding: 1rem;
@@ -1149,6 +1162,7 @@ div.toast.show {
   font-size: 1.5rem;
   margin: 1rem 0;
   line-height: 1.2;
+  color: var(--text-p0);
 }
 .l_cover .cover-wrap .description {
   margin: 1rem 0;
@@ -1636,11 +1650,11 @@ article.md-text.content+.related-wrap {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  height: 240px;
+  height: 220px;
 }
 @media screen and (max-width: 667px) {
   .tag-plugin.banner {
-    height: 200px;
+    height: 180px;
   }
 }
 .tag-plugin.banner .bg {
@@ -2355,8 +2369,16 @@ details.folding[child=codeblock]>div.body .highlight {
 details.folding[child=codeblock]>div.body .highlight figcaption {
   display: none;
 }
+details.folding[child=codeblock]>div.body .highlight figcaption span {
+  background: var(--theme-block);
+}
 details.folding[child=codeblock]>div.body .highlight .code:before {
   content: none;
+}
+details.folding[child=codeblock]>div.body .highlight+.highlight {
+  border-top: 1px dashed var(--theme-border);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 details.folding[child=iframe] {
   overflow: hidden;
@@ -2453,9 +2475,10 @@ details.folding[child=iframe] >div.body {
 }
 .users-wrap .user-card .card-link .name {
   max-width: 100%;
-  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
 }
 .users-wrap .user-card .card-link img {
   object-fit: cover;
@@ -2637,31 +2660,27 @@ details.folding[child=iframe] >div.body {
 .tag-plugin.grid {
   display: grid;
   grid-gap: 16px;
-  grid-template-columns: repeat(auto-fill, calc((100% - 1 * 16px) / 2));
 }
-.tag-plugin.grid >.cell p:first-child>strong:only-child {
-  font-size: 1rem;
-}
-.tag-plugin.grid >.cell> p {
+.tag-plugin.grid[bg]>.cell> p {
   line-height: 1.5;
 }
-.tag-plugin.grid >.cell> :first-child {
+.tag-plugin.grid[bg]>.cell> :first-child {
   margin-top: 0;
 }
-.tag-plugin.grid >.cell> :last-child {
+.tag-plugin.grid[bg]>.cell> :last-child {
   margin-bottom: 0;
 }
-.tag-plugin.grid >.cell> p:first-child {
+.tag-plugin.grid[bg]>.cell> p:first-child {
   margin-top: -0.25em;
 }
-.tag-plugin.grid >.cell> p:last-child {
+.tag-plugin.grid[bg]>.cell> p:last-child {
   margin-bottom: -0.25em;
 }
 .tag-plugin.grid[bg]>.cell {
   padding: 1rem;
   border-radius: 12px;
 }
-.tag-plugin.grid[bg='block']>.cell {
+.tag-plugin.grid[bg='box']>.cell {
   background: var(--block);
 }
 .tag-plugin.grid[bg='card']>.cell {
@@ -2815,7 +2834,7 @@ details.folding[child=iframe] >div.body {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  width: 320px;
+  width: 340px;
   max-width: 100%;
   box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
   border-radius: 6px;
@@ -3005,6 +3024,14 @@ details.folding[child=iframe] >div.body {
   margin: 0;
   border: none;
   background: none;
+}
+.md-text .tag-plugin.note[child=codeblock] .highlight figcaption span {
+  background: var(--theme-block);
+}
+.md-text .tag-plugin.note[child=codeblock] .highlight+.highlight {
+  border-top: 1px dashed var(--theme-border);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 .md-text .tag-plugin.note[child=tabs] >.body {
   margin: 0;
@@ -4703,7 +4730,7 @@ nav.menu a.nav-item:hover {
   margin-bottom: 0.5em;
   position: relative;
   padding: 4px 0;
-  color: var(--text-p3);
+  color: var(--text-p1);
 }
 .post-list #archive .archive-header:after {
   content: "";
@@ -4714,7 +4741,7 @@ nav.menu a.nav-item:hover {
   right: 0;
   z-index: -1;
   border-radius: 4px;
-  background: var(--block-border);
+  background: #1cd0fd;
 }
 .post-list #archive a.post {
   display: inline-flex;
@@ -4736,15 +4763,10 @@ nav.menu a.nav-item:hover {
 }
 .post-list #archive a.post:hover {
   border-bottom: 1px solid #1cd0fd;
+  color: var(--text-p0);
 }
 .post-list #archive a.post:hover time {
   color: #1cd0fd;
-}
-.post-list #archive:hover .archive-header {
-  color: var(--text-p1);
-}
-.post-list #archive:hover .archive-header:after {
-  background: #1cd0fd;
 }
 .post-list #cats {
   padding: 0;
@@ -4996,27 +5018,7 @@ nav.menu a.nav-item:hover {
   object-fit: cover;
   width: 100%;
   border-radius: 0;
-  height: 280px;
-}
-@media screen and (max-width: 900px) {
-  .post-list .post-card .post-cover img {
-    height: 240px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .post-list .post-card .post-cover img {
-    height: 220px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .post-list .post-card .post-cover img {
-    height: 200px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .post-list .post-card .post-cover img {
-    height: 180px;
-  }
+  aspect-ratio: 2.4;
 }
 .post-list .post-card.post.photo .cover {
   position: relative;
@@ -5024,6 +5026,8 @@ nav.menu a.nav-item:hover {
 }
 .post-list .post-card.post.photo .cover img {
   width: 100%;
+  object-fit: cover;
+  aspect-ratio: 2.4;
 }
 .post-list .post-card.post.photo .cover .cover-info {
   padding: 1.5rem 1rem;
@@ -5394,6 +5398,10 @@ h1.article-title {
   left: -2px;
   right: -2px;
 }
+.md-text p:not([class]) a:not([class]):has(img):before,
+.md-text li:not([class]) a:not([class]):has(img):before {
+  content: none;
+}
 .md-text .aplayer {
   border-radius: 12px;
 }
@@ -5506,35 +5514,36 @@ img[fancybox='true'] {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 4px 0.5rem;
-  opacity: 0;
+  padding: 0px 0.5rem;
   font-weight: 700;
-  color: var(--text-p2);
+  visibility: hidden;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
-  background: var(--block-hover);
+  background: var(--card);
   display: block;
   cursor: pointer;
-  margin-right: 0.5rem;
+  margin-right: 4px;
+  margin-top: 4px;
+  border-radius: calc(12px - 4px);
 }
 .highlight:hover .code:before {
-  opacity: 0;
+  visibility: hidden;
 }
 .highlight:hover .copy-btn {
-  opacity: 0.75;
-}
-.highlight .code .copy-btn:hover {
-  opacity: 1;
+  visibility: visible;
 }
 .highlight .code .copy-btn.success {
-  color: #3dc550;
-  opacity: 0.75;
+  background: #3dc550;
+  color: #fff;
+  visibility: visible;
 }
 .highlight .code .copy-btn.warning {
-  color: #fa6400;
-  opacity: 0.75;
+  background: #fa6400;
+  color: #fff;
+  visibility: visible;
 }
-.md-text .folding[child=codeblock] .highlight .code .copy-btn {
-  margin-top: 1rem;
+.md-text .folding[child=codeblock] .code .copy-btn {
+  z-index: 1;
+  margin-right: 1rem;
   border-radius: 6px;
 }
