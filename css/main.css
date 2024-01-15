@@ -422,6 +422,9 @@ pre:not([class]):has(>code) {
 .md-text .highlight .gutter+.code pre {
   padding-left: 0.25em;
 }
+.md-text .gist {
+  --fgColor-default: var(--text-p1);
+}
 .md-text .gist .gist-file {
   border: 1px solid var(--block-border);
   border-radius: 12px;
@@ -1417,11 +1420,11 @@ nav.cap a+a {
 }
 .paginator-wrap .extend.next {
   border-left: 1px dashed var(--block-border);
-  background-image: url("https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.9/arrow/064b95430caf4.svg");
+  background-image: url("https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/arrow/064b95430caf4.svg");
 }
 .paginator-wrap .extend.prev {
   border-right: 1px dashed var(--block-border);
-  background-image: url("https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.9/arrow/f049bbd4e88ec.svg");
+  background-image: url("https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/arrow/f049bbd4e88ec.svg");
 }
 .paginator-wrap .current {
   font-family: Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif;
@@ -1501,6 +1504,9 @@ article.md-text.content+.related-wrap {
   -webkit-box-orient: vertical;
   overflow: hidden;
   -webkit-line-clamp: 2;
+}
+.related-posts .item.active .title {
+  border-bottom: 1px dashed #1cd0fd;
 }
 .related-posts .item:hover .title {
   color: #ff5724;
@@ -1797,6 +1803,19 @@ article.md-text.content+.related-wrap {
     margin: 0;
     border-radius: 0;
   }
+}
+.tag-plugin.banner .navbar a.active {
+  background: var(--blur-bg);
+}
+@supports ((-webkit-backdrop-filter: blur(var(--blur-px))) or (backdrop-filter: blur(var(--blur-px)))) {
+  .tag-plugin.banner .navbar a.active {
+    background: var(--blur-bg) !important;
+    backdrop-filter: saturate(200%) blur(var(--blur-px));
+    -webkit-backdrop-filter: saturate(200%) blur(var(--blur-px));
+  }
+}
+.tag-plugin.banner .navbar a.active:hover {
+  background: var(--card);
 }
 .md-text .tag-plugin.checkbox {
   display: flex;
@@ -2417,7 +2436,7 @@ details.folding[child=iframe] >div.body {
   margin-bottom: 20px;
 }
 .md-text .frame-wrap#iphone11 .frame {
-  background-image: url("https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.9/frame/iphone11.svg");
+  background-image: url("https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/frame/iphone11.svg");
   width: 329px;
   height: 658px;
 }
@@ -4316,7 +4335,7 @@ nav.menu a.nav-item:hover {
   font-size: 0.8125rem;
   color: var(--text-p0);
 }
-.search-wrapper.noresult[searching='true'] .search-icon {
+.search-wrapper.noresult[searching='true'] .search-icon path[p-id="1562"] {
   color: #f44336;
 }
 .search-wrapper.noresult[searching='true'] .search-form {
@@ -4387,6 +4406,9 @@ nav.menu a.nav-item:hover {
   color: var(--text-p2);
   padding: 0.5rem;
   border-radius: calc(6px - 2px);
+}
+.widget-wrapper .search-icon path[p-id="1562"] {
+  color: #1cd0fd;
 }
 .widget-wrapper #search-result,
 .widget-wrapper .search-no-result {
