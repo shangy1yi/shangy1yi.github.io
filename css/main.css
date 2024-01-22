@@ -847,7 +847,7 @@ svg.icon {
   overflow: hidden;
 }
 svg.active-icon {
-  color: #3dc550;
+  color: #1cd0fd;
 }
 h1,
 .h1 {
@@ -4646,6 +4646,13 @@ details.toc[open] >div.body section .header+.doc_tree {
   background: none;
   padding: 0;
   margin: 0;
+}
+.widget-wrapper.timeline .tag-plugin.timeline .timenode .body .highlight,
+.widget-wrapper.timeline .tag-plugin.timeline .timenode .body pre:not([class]):has(>code) {
+  background: var(--alpha50);
+}
+.widget-wrapper.timeline .tag-plugin.timeline[api] .body .footer {
+  background: none;
 }
 .widget-wrapper.toc.single .doc-tree.active>.toc {
   border-left: 2px solid var(--alpha50);
