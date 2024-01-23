@@ -286,13 +286,7 @@ if (stellar.plugins.swiper) {
 
 // preload
 if (stellar.plugins.preload) {
-  if (stellar.plugins.preload.service == 'instant_page') {
-    stellar.loadScript(stellar.plugins.preload.instant_page, {
-      defer: true,
-      type: 'module',
-      integrity: 'sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1'
-    })
-  } else if (stellar.plugins.preload.service == 'flying_pages') {
+  if (stellar.plugins.preload.service == 'flying_pages') {
     window.FPConfig = {
       delay: 0,
       ignoreKeywords: [],
@@ -303,24 +297,9 @@ if (stellar.plugins.preload) {
   }
 }
 
-function loadFancybox() {
-  stellar.loadCSS(stellar.plugins.fancybox.css);
-  stellar.loadScript(stellar.plugins.fancybox.js, { defer: true }).then(function () {
-    Fancybox.bind(selector, {
-      groupAll: true,
-      hideScrollbar: false,
-      Thumbs: {
-        autoStart: false,
-      },
-      caption: function (fancybox, carousel, slide) {
-        return slide.$trigger.alt || null
-      }
-    });
-  })
-}
 // fancybox
 if (stellar.plugins.fancybox) {
-  let selector = 'img[fancybox]:not(.error)';
+  let selector = '[data-fancybox]:not(.error)';
   if (stellar.plugins.fancybox.selector) {
     selector += `, ${stellar.plugins.fancybox.selector}`
   }
@@ -335,13 +314,12 @@ if (stellar.plugins.fancybox) {
     stellar.loadCSS(stellar.plugins.fancybox.css);
     stellar.loadScript(stellar.plugins.fancybox.js, { defer: true }).then(function () {
       Fancybox.bind(selector, {
-        groupAll: true,
         hideScrollbar: false,
         Thumbs: {
           autoStart: false,
         },
-        caption: function (fancybox, carousel, slide) {
-          return slide.$trigger.alt || null
+        caption: (fancybox, slide) => {
+          return slide.triggerEl.alt || null
         }
       });
     })
