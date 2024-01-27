@@ -17,7 +17,7 @@ tags:
 - chatgpt
 - ai
 title: OpenAI 一口气宣布了 5 个新模型
-updated: 2024-1-27T17:33:37.382+8:0
+updated: 2024-1-27T17:38:30.449+8:0
 ---
 **OpenAI 今天一口气宣布了 5 个新模型，包括两个文本嵌入模型、升级的 GPT-4 Turbo 预览版和 GPT-3.5 Turbo、一个审核模型。**
 
@@ -71,3 +71,5 @@ text-embedding-3-large 的价格为每 1k token 售价 0.00013 美元。
 
 具体来说，新的输入价格定格在每 1k token 价格为 0.0005 美元，而输出价格则为每 1k token 价格为 0.0015 美元。
 
+
+[原文地址](https://openai.com/blog/new-embedding-models-and-api-updates)，感兴趣可以深入阅读
