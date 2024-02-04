@@ -33,10 +33,9 @@
   }
 }
 .l_body.story {
-  --fsp: calc(0.9375rem + 2px);
-  --gap-p: 1.5rem;
+  --gap-p: 2rem;
 }
-.l_body.story .tag-plugin,
+.l_body.story div.tag-plugin,
 .l_body.story p>img {
   margin-top: 2.4rem;
   margin-bottom: 2.4rem;
@@ -155,7 +154,7 @@ blockquote {
   padding: 0.25rem 0.75rem;
   background: var(--block);
   border-left: 4px solid var(--text-meta);
-  border-radius: 4px 6px 6px 4px;
+  border-radius: 4px 12px 12px 4px;
   color: var(--text-p2);
 }
 :root {
@@ -1083,7 +1082,7 @@ div.toast.show {
   color: var(--text-banner);
 }
 .article.banner .content .bottom {
-  padding: 1.5rem 1rem;
+  padding: 2rem 1rem;
 }
 .article.banner .content h1 {
   line-height: 1.2;
@@ -1776,6 +1775,9 @@ article.md-text.content+.related-wrap {
   align-items: flex-start;
   height: 220px;
 }
+.banner.top {
+  border-radius: 16px;
+}
 @media screen and (max-width: 667px) {
   .banner {
     height: 180px;
@@ -1953,6 +1955,51 @@ article.md-text.content+.related-wrap {
   .md-text.content:first-child .tag-plugin.banner:first-child {
     margin-top: 1rem;
   }
+}
+a.tag-plugin.button {
+  background: var(--theme);
+  color: var(--alpha100);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+  transition: background 0.2s ease-out;
+  -moz-transition: background 0.2s ease-out;
+  -webkit-transition: background 0.2s ease-out;
+  -o-transition: background 0.2s ease-out;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+a.tag-plugin.button svg,
+a.tag-plugin.button img {
+  height: 24px;
+  width: auto;
+  margin: 0 -0.5em 0 1em;
+  flex-shrink: 0;
+}
+a.tag-plugin.button span {
+  text-indent: 0;
+  line-height: 24px;
+  margin: 8px 1em;
+}
+a.tag-plugin.button[size='xs'] {
+  margin: 0;
+  border-radius: 2px;
+}
+a.tag-plugin.button[size='xs'] svg,
+a.tag-plugin.button[size='xs'] img {
+  margin: 0 2px 0 0;
+  height: 1em;
+}
+a.tag-plugin.button[size='xs'] span {
+  margin: 0;
+}
+a.tag-plugin.button:hover {
+  --theme: #ff5724;
+}
+.tag-plugin.grid a.tag-plugin.button {
+  width: 100%;
+  box-sizing: border-box;
 }
 .md-text .tag-plugin.checkbox {
   display: flex;
@@ -2931,7 +2978,7 @@ span.tag-plugin.icon img {
   font-size: 1.125rem;
   padding: 6px;
   line-height: 0;
-  border-radius: 4px;
+  border-radius: 40px;
   transition: color 0.2s ease-out, opacity 0.2s ease-out, background 0.2s ease-out;
   -moz-transition: color 0.2s ease-out, opacity 0.2s ease-out, background 0.2s ease-out;
   -webkit-transition: color 0.2s ease-out, opacity 0.2s ease-out, background 0.2s ease-out;
@@ -3027,7 +3074,7 @@ span.tag-plugin.icon img {
   width: 300px;
   max-width: 100%;
   box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
-  border-radius: 6px;
+  border-radius: 12px;
   transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
   -moz-transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
   -webkit-transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
@@ -3319,6 +3366,7 @@ span.tag-plugin.icon img {
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
+  flex-wrap: wrap;
 }
 .tag-plugin.okr .okr-item .labels .label {
   background: var(--theme-block);
@@ -3361,6 +3409,21 @@ span.tag-plugin.icon img {
   height: 8px;
   border-radius: 4px;
   background: var(--theme);
+}
+@media screen and (max-width: 667px) {
+  .tag-plugin.okr .okr-item {
+    grid-template-columns: 2.8rem auto 50px;
+    grid-column-gap: 0.5rem;
+    padding: 0.5rem;
+  }
+  .tag-plugin.okr .okr-item .okr-left .title {
+    padding: 0 0.25rem;
+  }
+  .tag-plugin.okr .okr-item .label {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 .tag-plugin.note blockquote,
 .tag-plugin.folding blockquote {
@@ -4407,7 +4470,7 @@ details.toc[open] >div.body section .header+.doc_tree {
 .l_left {
   margin: 8px 8px 8px 0;
   height: calc(100vh - 16px);
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
 }
 .l_left .header {
