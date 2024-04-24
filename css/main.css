@@ -1394,7 +1394,8 @@ div.toast.show {
 }
 .page-footer a {
   color: var(--text-p2);
-  border-radius: 2px;
+  border-radius: 4px;
+  transition: background 0.2s ease-out;
 }
 .page-footer a:hover {
   color: var(--text);
@@ -2493,6 +2494,7 @@ a.tag-plugin.button:hover {
   display: block;
   object-fit: contain;
   height: 1.75em;
+  border-radius: 0;
 }
 .tag-plugin.folders {
   margin: var(--gap-p) 0;
@@ -4399,7 +4401,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   transform: translateX(-50%);
   border-radius: 2px;
   bottom: 2px;
-  background: var(--text-p1);
+  background: currentColor;
 }
 .nav-area {
   margin: 32px var(--gap-margin) 0;
@@ -4541,6 +4543,8 @@ details.toc[open] >div.body section .header+.doc_tree {
   height: calc(100vh - 16px);
   border-radius: 16px;
   overflow: hidden;
+  overflow: clip;
+  overflow-clip-margin: 0.5px;
 }
 .l_left .header {
   margin: var(--gap-max) var(--gap-margin) 0;
@@ -4800,7 +4804,6 @@ details.toc[open] >div.body section .header+.doc_tree {
   font-weight: 500;
 }
 .widget-wrapper.post-list .widget-body a {
-  line-height: 1;
   font-size: 0.875rem;
   padding: 8px 16px;
   display: block;
