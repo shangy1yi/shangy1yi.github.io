@@ -507,9 +507,6 @@ pre:not([class]):has(>code) {
 .md-text .highlight .gutter+.code pre {
   padding-left: 0.25em;
 }
-.md-text .gist {
-  --fgColor-default: var(--text-p1);
-}
 .md-text .gist .gist-file {
   border: 1px solid var(--block-border);
   border-radius: 12px;
@@ -522,9 +519,13 @@ pre:not([class]):has(>code) {
   display: inherit;
   border: none;
   border-radius: 0;
-  background: none;
+  background: var(--block);
   margin: 0;
   padding: 1em 0;
+}
+.md-text .gist .blob-code-inner {
+  color: var(--text-p1);
+  font-family: Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif;
 }
 .md-text .gist .gist-meta {
   background: var(--block-border);
@@ -6201,7 +6202,8 @@ div.swiper-slide img {
 .swiper-button-next:after {
   transform: translateX(1px);
 }
-img[data-fancybox] {
+img[data-fancybox],
+a[data-fancybox] {
   cursor: zoom-in;
 }
 .highlight {
