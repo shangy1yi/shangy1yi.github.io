@@ -1,14 +1,30 @@
 ---
+# 基本信息
 title: {{ title }}
 date: {{ date }}
 tags: []
 categories: []
-description: 
+description:
 cover: 
 banner: 
-poster: # 海报（可选，全图封面卡片）
-  topic:  # 标题上方的小字可选
-  headline:  # 大标题必选
-  caption:  # 标题下方的小字可选
-  color:  # 标题颜色可选
+poster: 
+  topic:
+  headline:
+  caption:
+  color:
+
+sticky: 
+mermaid:
+katex: 
+mathjax: 
+topic:
+author: 
+references:
+comments:
+indexing:
+breadcrumb:
+leftbar: 
+rightbar:
+h1:
+type:
 ---
