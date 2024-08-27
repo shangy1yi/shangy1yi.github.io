@@ -523,7 +523,7 @@ plugins:
     summary_toggle: false
     interface:
       name: AI摘要
-      introduce: '我是文章辅助AI: QX-AI，点击下方的按钮，让我生成本文简介、推荐相关文章等。'
+      introduce: '点击下方的按钮，生成本文简介、推荐相关文章等。'
       version: TianliGPT
       button: ["介绍自己", "推荐文章", "生成摘要", "矩阵穿梭"]
 
