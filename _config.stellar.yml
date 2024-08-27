@@ -511,10 +511,10 @@ plugins:
   # AI 摘要
   # https://github.com/qxchuckle/Post-Summary-AI
   tianli_gpt: 
-    enable: #true
+    enable: true
     js: https://jsd.onmicrosoft.cn/gh/qxchuckle/Post-Summary-AI@6.0/chuckle-post-ai.min.js
     field: post # all, post, wiki
-    key: 5Q5mpqRK5DkwT1X9Gi5e # tianli_gpt key
+    key: ZcxoperWCUV # tianli_gpt key
     total_length: 1000 # 设置提交的字数限制，默认为1000字，上限为5000，超过5000字符将被截断
     typewriter: true # 打字机动画 
     summary_directly: true # 是否直接显示摘要，否则显示 AI 简介
