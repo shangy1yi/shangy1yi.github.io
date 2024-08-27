@@ -210,7 +210,7 @@ search:
 
 ######## Comments ########
 comments:
-  service: # beaudar, utterances, giscus, twikoo, waline, artalk
+  service: giscus
   comment_title: 快来参与讨论吧~
   lazyload: false # true / false
   # beaudar
