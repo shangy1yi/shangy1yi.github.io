@@ -34,11 +34,16 @@ menubar:
     # icon: 支持 svg/img 标签，可以定义在 icons.yml 文件中，也支持外部图片的 URL
     # title: 标题
     # url: 点击跳转到哪，支持相对路径和绝对路径
-    # - id: post
-    #   theme: '#1BCDFC'
-    #   icon: solar:documents-bold-duotone
-    #   title: 博客
-    #   url: /
+     - id: post
+       theme: '#1BCDFC'
+       icon: solar:documents-bold-duotone
+       title: 博客
+       url: /
+     - id: bangumis
+       theme: '#3DC550'
+       icon: solar:notebook-bookmark-bold-duotone
+       title: 番剧列表
+       url: /bangumis/
     # - id: wiki
     #   theme: '#3DC550'
     #   icon: solar:notebook-bookmark-bold-duotone
