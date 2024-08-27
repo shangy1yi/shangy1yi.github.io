@@ -525,7 +525,7 @@ plugins:
       name: AI摘要
       introduce: '我是文章辅助AI,点击下方的按钮,AI生成本文摘要,获取跟多AI模型服务请前往:token.syou1ti.lol'
       version: gpt-4o-mini
-      button: ["介绍自己","生成摘要", "矩阵穿梭"]
+      button: [ "介绍自己" , "生成摘要" ]
 
 
   # Katex - The fastest math typesetting library for the web
