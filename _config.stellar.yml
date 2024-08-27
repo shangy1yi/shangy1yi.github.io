@@ -524,7 +524,7 @@ plugins:
     interface:
       name: {% mark AI摘要 color:light %}
       introduce: '我是文章辅助AI: 点击下方的按钮，AI生成本文摘要'
-      version: {% mark gpt-4o-mini color:light %}
+      version: gpt-4o-mini
       button: ["介绍自己", "推荐文章", "生成摘要", "矩阵穿梭"]
 
 
