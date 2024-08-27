@@ -1,7 +1,7 @@
 ---
 categories:
 - - 站主的瞎话
-cover: https://github.com/shangy1yi/picx-images-hosting@master/image.4smklp0kl4e0.webp
+cover: null
 date: '2023-08-26T15:55:31.256047+08:00'
 tags:
 - twitter

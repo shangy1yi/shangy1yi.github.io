@@ -2,7 +2,7 @@
 abbrlink: ''
 categories:
 - - 科技&产品
-cover: https://github.com/shangy1yi/picx-images-hosting/raw/master/image.4t6k6fnvjy80.png
+cover: null
 date: '2023-10-04T00:07:49.567179+08:00'
 tags:
 - 微软

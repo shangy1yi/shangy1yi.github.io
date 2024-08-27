@@ -2,7 +2,7 @@
 categories:
 - - 科技&产品
 - - 站主的瞎话
-cover: https://github.com/shangy1yi/picx-images-hosting/raw/master/F3L6AGwaQAA2DN-.5mgps2osmls0.jpg
+cover: null
 date: '2023-08-14T14:36:24.255833+08:00'
 tags:
 - 苹果

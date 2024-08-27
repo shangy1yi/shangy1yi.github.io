@@ -3,7 +3,7 @@ abbrlink: ''
 banner: null
 categories:
 - - 杂文快报
-cover: https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/image.4fjwx2vfm1i0.png
+cover: null
 date: '2023-11-02T22:30:54.551701+08:00'
 description: null
 poster:
