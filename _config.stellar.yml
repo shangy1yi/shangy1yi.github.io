@@ -316,12 +316,12 @@ footer:
      X:
        icon: '<img src="https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/x-social-media-logo-icon.2krup0h273.png"/>'
        url: https://x.com/Syou1Ti
-    # music:
-    #   icon: '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/3845874.svg"/>'
-    #   url: /
-    # unsplash:
-    #   icon: '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/3616429.svg"/>'
-    #   url: /
+     AIToken:
+       icon: '<img src="https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/favicon-aichat.syou1ti.lol-2-48x48.175blujy8p.png"/>'
+       url: https://aichat.syou1ti.lol
+     home:
+       icon: '<img src="https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/mstile-150x150.2rv2lbjs7l.webp"/>'
+       url: https://home.syou1ti.lol
     # comments:
     #   icon: '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/942ebbf1a4b91.svg"/>'
     #   url: /about/#comments
