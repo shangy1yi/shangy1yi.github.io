@@ -314,13 +314,13 @@ comments:
 footer:
   social:
      X:
-       icon: '<i class="fa-brands fa-x-twitter"></i>'
+       icon: '<img src="https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/x-twitter-brands-solid.7sn5rr5q2e.svg"/>'
        url: https://x.com/Syou1Ti
      AIToken:
-       icon: '<i class="fa-solid fa-microchip"></i>'
+       icon: '<img src="https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/microchip-solid.6pnggv9d11.svg"/>'
        url: https://aichat.syou1ti.lol
      home:
-       icon: '<i class="fa-solid fa-house"></i>'
+       icon: '<img src="https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/house-solid.41y06ifind.svg"/>'
        url: https://home.syou1ti.lol
     # comments:
     #   icon: '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/942ebbf1a4b91.svg"/>'
