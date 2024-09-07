@@ -30,7 +30,7 @@ tags:
 title: Caddy2搭建HTTPS正向代理
 topic: null
 type: null
-updated: '2024-09-07T13:47:01.512+08:00'
+updated: '2024-09-07T20:08:42.809+08:00'
 ---
 使用Caddy v2打入forwardproxy插件快速搭建HTTPS正向代理，毕竟Caddy自动请求SSL证书，能够省下许多不必要的折腾。
 
@@ -59,8 +59,14 @@ updated: '2024-09-07T13:47:01.512+08:00'
 
 `vi ~/.profile` 添加下面内容：
 
-| `1``2``3``4``5` | `export PATH=$PATH:/usr/local/go/bin``export PATH=$PATH:$HOME/.cargo/bin``export GOROOT=/usr/local/go``export GOBIN=$GOROOT/bin``export PATH=$PATH:$GOBIN` |
-| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+```
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/.cargo/bin
+export GOROOT=/usr/local/go
+export GOBIN=$GOROOT/bin
+export PATH=$PATH:$GOBIN
+
+```
 
 保存后，`source ~/.profile`
 
@@ -74,8 +80,11 @@ updated: '2024-09-07T13:47:01.512+08:00'
 
 项目地址：[https://github.com/caddyserver/forwardproxy](https://github.com/caddyserver/forwardproxy)
 
-| `1``2` | `xcaddy build master \``    --with github.com/caddyserver/forwardproxy@caddy2` |
-| ---------------- | ---------------------------------------------------------------------------------------- |
+```
+xcaddy build master \
+    --with github.com/caddyserver/forwardproxy@caddy2
+
+```
 
 编译完成后caddy二进制文件会在root目录下，俺们可以移到`/usr/bin/`下运行：
 
@@ -97,8 +106,18 @@ updated: '2024-09-07T13:47:01.512+08:00'
 
 编写https.caddyfile文件，添加内容如下：
 
-| `1``2``3``4``5``6``7``8``9` | `:443, proxy.xxxx.com``route {``	forward_proxy {``		basic_auth user1 0NtCL2JPJBgddPMmlPcJ  #用户名和密码``		hide_ip  #隐藏客户端IP``		hide_via``	}``	file_server``}` |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+```
+:443, proxy.xxxx.com
+route {
+	forward_proxy {
+		basic_auth user1 0NtCL2JPJBgddPMmlPcJ  #用户名和密码
+		hide_ip  #隐藏客户端IP
+		hide_via
+	}
+	file_server
+}
+
+```
 
 上面需要修改的地方是自己的域名，添加用户名和密码就可以了。注意删除掉上面注释
 
@@ -126,8 +145,27 @@ updated: '2024-09-07T13:47:01.512+08:00'
 
 添加如下内容
 
-| `1``2``3``4``5``6``7``8``9``10``11``12``13``14``15``16``17``18` | `[Unit]``Description=Caddy``Documentation=https://caddyserver.com/docs/``After=network.target network-online.target``Requires=network-online.target``[Service]``User=root``ExecStart=/usr/bin/caddy run --environ --config /etc/caddy/https.caddyfile``ExecReload=/usr/bin/caddy reload --config /etc/caddy/https.caddyfile --force``TimeoutStopSec=5s``LimitNOFILE=1048576``PrivateTmp=true``ProtectSystem=full``AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE``[Install]``WantedBy=multi-user.target` |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+```
+[Unit]
+Description=Caddy
+Documentation=https://caddyserver.com/docs/
+After=network.target network-online.target
+Requires=network-online.target
+
+[Service]
+User=root
+ExecStart=/usr/bin/caddy run --environ --config /etc/caddy/https.caddyfile
+ExecReload=/usr/bin/caddy reload --config /etc/caddy/https.caddyfile --force
+TimeoutStopSec=5s
+LimitNOFILE=1048576
+PrivateTmp=true
+ProtectSystem=full
+AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
+
+[Install]
+WantedBy=multi-user.target
+
+```
 
 重载systemctl服务 `systemctl daemon-reload`
 
