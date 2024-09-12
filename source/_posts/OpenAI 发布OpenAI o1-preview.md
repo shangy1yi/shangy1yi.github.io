@@ -76,5 +76,8 @@ updated: '2024-09-13T01:25:19.783+08:00'
 * **API 开发者** ：符合条件的开发者今天可以开始使用，速率限制为 20 RPM。
 * **未来计划** ：计划为所有 ChatGPT Free 用户提供 o1-mini 访问。
 
+#### 9.视频演示
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/T0IrhzrhR40?si=Y8RaoNN5RQF8kAzi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/50W4YeQdnSg?si=OC4VJ0x3kUewgajS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
