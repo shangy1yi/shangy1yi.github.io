@@ -30,7 +30,7 @@ tags:
 title: OpenAI 发布OpenAI o1-preview(内部称为 Project Strawberry/Q*）
 topic: null
 type: null
-updated: '2024-09-13T01:20:20.067+08:00'
+updated: '2024-09-13T01:25:19.783+08:00'
 ---
 ![Introducing OpenAI o1 > Model dropdown > Media Item](https://images.ctfassets.net/kftzwdyauwt9/5KQV9Im89elavhOaw857H7/9bf152dd9b0e38f51264e593a0c6ebac/oai_o1_model_picker.png?w=3840&q=90&fm=webp)
 
@@ -75,3 +75,6 @@ updated: '2024-09-13T01:20:20.067+08:00'
 * **ChatGPT 企业版和教育版用户** ：从下周开始可以使用。
 * **API 开发者** ：符合条件的开发者今天可以开始使用，速率限制为 20 RPM。
 * **未来计划** ：计划为所有 ChatGPT Free 用户提供 o1-mini 访问。
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/T0IrhzrhR40?si=Y8RaoNN5RQF8kAzi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
