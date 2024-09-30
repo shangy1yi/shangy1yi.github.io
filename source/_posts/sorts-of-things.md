@@ -32,13 +32,11 @@ tags:
 title: 各种东西的推荐
 topic: null
 type: null
-updated: '2024-09-30T16:39:42.916+08:00'
+updated: '2024-09-30T17:50:19.062+08:00'
 ---
 最近趁着有空，将自己使用的比较不错的 Win/Mac软件、网站、生活好物给整理了一下，给未来的自己留个档，期待也给你一些帮助。
 
 # 软件
-
-
 
 ## Win
 
@@ -62,5 +60,5 @@ updated: '2024-09-30T16:39:42.916+08:00'
 * [**Bob**](https://bobtranslate.com/)：（免费）翻译软件。*可以配置了OpenAI 的服务，划词一键翻译，快捷键唤起翻译，多个翻译对比结果，有道翻译的爷爷*
 * [**uPic**](https://github.com/gee1k/uPic)：（免费）图片上传软件。*可以用 FaaS 写一个上传服务或者直接使用云厂商的 OSS 服务，可以一键上传直接复制使用，写博客搭配用起来很方便*
 * [**TotalFinder**](https://totalfinder.binaryage.com/)：（免费）文件管理器。*原装Finder 的代替品，让它变成类似 Chrome 多 Tab 这种体验，同时和原有的很像，增加了不少有用的功能比如说剪切*
-* [**OrbStack**](https://orbstack.dev/)：OrbStack 是运行 Docker 容器和 Linux 的快速、轻便、简单的工具。*Docker Desktop的 替代品*
+* [**OrbStack**](https://orbstack.dev/)：（免费）OrbStack 是运行 Docker 容器和 Linux 的快速、轻便、简单的工具。*Docker Desktop的 替代品*
 
