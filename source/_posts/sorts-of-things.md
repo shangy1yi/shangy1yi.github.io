@@ -29,7 +29,7 @@ tags:
 - 软件
 - 网站
 - 生活好物
-title: 各种东西的推荐
+title: 非常优秀的软件/网站推荐
 topic: null
 type: null
 updated: '2024-09-30T17:50:19.062+08:00'
@@ -48,10 +48,11 @@ updated: '2024-09-30T17:50:19.062+08:00'
 * [**copycat clipboard**](https://www.entilitystudio.com/copycat-clipboard?ref=producthunt)：（免费）剪切板整理与多设备剪切板同步工具。*有付费功能，但免费的部分已经够用，梦寐以求的剪切板体验，牛*
 * [**follow**](https://app.follow.is/)：（免费）RSS阅读器。*没话说配得上作者所定义的次时代信息浏览器，美观好用，但现在需要邀请码才能用，一码难求*
 * [**OneCommander**](https://onecommander.com/):（免费）文件管理器。*我用到过的最好的文件管理器，可能不是最美观的，但双窗格浏览器太提升效率了，直接替代win原装文件管理器*
-* [**finalshell**](https://finalshell.net/)：（免费）强大的SSH客户机。*伟大无需多言*
-* [**Nekobox**](https://getnekobox.com/en/)：（免费）代理工具。我们二次元太牛啦
-* [**Upscayl**](https://www.upscayl.org/)：（免费）本地AI 图片放大工具，也提供客户端的能力，超级方便好用，也有mac的客户端
+* [**finalshell**](https://finalshell.net/)：（免费）强大的SSH客户端*伟大无需多言*
+* [**Nekobox**](https://getnekobox.com/en/)：（免费）代理工具。*我们二次元太牛啦*
+* [**Upscayl**](https://www.upscayl.org/)：（免费）本地AI 图片放大工具。*提供客户端的能力，超级方便好用*
 * [**PotPlayer**](https://potplayer.org/en/)：（免费）视频播放器。*win上最好的播放器没有之一*
+* [**Motrix**](https://motrix.app/)：（免费）下载器，支持HTTP, FTP, BitTorrent, Magnet等。
 
 ## MacOS
 
@@ -67,4 +68,9 @@ updated: '2024-09-30T17:50:19.062+08:00'
 * [**Keka**](https://www.keka.io/en/)：（免费）文件压缩工具。*能不用但不能没有*
 * [**IINA**](https://iina.io/)：（免费）视频播放器。*这个不敢说最好，但是很简洁好用*
 * [**Ice**](https://github.com/jordanbaird/Ice)：（免费）菜单栏管理器。*强大而美观*
+* [**Whisky**](https://getwhisky.app/)：（免费）利用Apple's Game Porting Toolkit运行win平台游戏的工具。*伟大无需多言*
+* [**Server box**](https://apps.apple.com/us/app/serverbox/id1586449703)：（免费）强大的SSH客户端。*Mac上的finalshell，伟大无需多言，用的人很少，算是发现宝藏了*
+* [**Upscayl**](https://www.upscayl.org/)：（免费）本地AI 图片放大工具。*提供客户端的能力，超级方便好用*
+* [**Motrix**](https://motrix.app/)：（免费）下载器，支持HTTP, FTP, BitTorrent, Magnet等。
+* [**Squirrel**](https://github.com/rime/squirrel)：（免费）输入法。简洁美观，高度自定义化
 
