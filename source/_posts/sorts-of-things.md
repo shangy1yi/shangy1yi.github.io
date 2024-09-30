@@ -74,4 +74,5 @@ updated: '2024-09-30T17:50:19.062+08:00'
 * [**Upscayl**](https://www.upscayl.org/)：（免费）本地AI 图片放大工具。*提供客户端的能力，超级方便好用*
 * [**Motrix**](https://motrix.app/)：（免费）下载器，支持HTTP, FTP, BitTorrent, Magnet等。
 * [**Squirrel**](https://github.com/rime/squirrel)：（免费）输入法。简洁美观，高度自定义化
+* [**Battery**](https://github.com/actuallymentor/battery)：（免费）电池保护工具。*平平无奇，简单好用*
 
