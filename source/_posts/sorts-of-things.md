@@ -38,7 +38,7 @@ updated: '2024-09-30T17:50:19.062+08:00'
 
 # 软件
 
-## Win
+## Windows
 
 * [**iTop Easy Desktop**](https://www.itopvpn.com/itop-easy-desktop?name=ied&ver=2.6.0.8&lan=&insur=other&to=homepage):（免费）桌面整理工具，可以按照文件类型自动分类桌面上的快捷方式和文档文件。*可以把桌面整理的干干净净，简洁主义者狂喜*
 * [**PixPin**](https://pixpinapp.com/start/quick-start)：（免费）拥有强大的截图功能，但不只是一款截图工具。*Win上最好用的截图软件*
@@ -51,8 +51,9 @@ updated: '2024-09-30T17:50:19.062+08:00'
 * [**finalshell**](https://finalshell.net/)：（免费）强大的SSH客户机。*伟大无需多言*
 * [**Nekobox**](https://getnekobox.com/en/)：（免费）代理工具。我们二次元太牛啦
 * [**Upscayl**](https://www.upscayl.org/)：（免费）本地AI 图片放大工具，也提供客户端的能力，超级方便好用，也有mac的客户端
+* [**PotPlayer**](https://potplayer.org/en/)：（免费）视频播放器。*win上最好的播放器没有之一*
 
-## Mac
+## MacOS
 
 * [**MessAuto**](https://github.com/LeeeSe/MessAuto)：（免费）接收手机短信验证码并自动回填到 Mac 上的工具。*很好用，解决了每次从手机看然后手填的麻烦。*
 * [**Shottr**](https://shottr.cc/)：（免费）*超级喜欢的一个截图软件，支持滚动截图、标注等功能。*
@@ -62,4 +63,8 @@ updated: '2024-09-30T17:50:19.062+08:00'
 * [**TotalFinder**](https://totalfinder.binaryage.com/)：（免费）文件管理器。*原装Finder 的代替品，让它变成类似 Chrome 多 Tab 这种体验，同时和原有的很像，增加了不少有用的功能比如说剪切*
 * [**OrbStack**](https://orbstack.dev/)：（免费）OrbStack 是运行 Docker 容器和 Linux 的快速、轻便、简单的工具。*Docker Desktop的 替代品*
 * [**applite**](https://aerolite.dev/applite)：（免费）Homebrew图形化界面。*刚用mac不想碰终端可以用这个过渡，个人还是喜欢用终端*
+* [**PrettyClean**](https://www.prettyclean.cc/zh)：（免费）磁盘清理工具。*很简洁*
+* [**Keka**](https://www.keka.io/en/)：（免费）文件压缩工具。*能不用但不能没有*
+* [**IINA**](https://iina.io/)：（免费）视频播放器。*这个不敢说最好，但是很简洁好用*
+* [**Ice**](https://github.com/jordanbaird/Ice)：（免费）菜单栏管理器。*强大而美观*
 
