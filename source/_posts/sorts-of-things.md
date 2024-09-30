@@ -61,4 +61,5 @@ updated: '2024-09-30T17:50:19.062+08:00'
 * [**uPic**](https://github.com/gee1k/uPic)：（免费）图片上传软件。*可以用 FaaS 写一个上传服务或者直接使用云厂商的 OSS 服务，可以一键上传直接复制使用，写博客搭配用起来很方便*
 * [**TotalFinder**](https://totalfinder.binaryage.com/)：（免费）文件管理器。*原装Finder 的代替品，让它变成类似 Chrome 多 Tab 这种体验，同时和原有的很像，增加了不少有用的功能比如说剪切*
 * [**OrbStack**](https://orbstack.dev/)：（免费）OrbStack 是运行 Docker 容器和 Linux 的快速、轻便、简单的工具。*Docker Desktop的 替代品*
+* [**applite**](https://aerolite.dev/applite)：（免费）Homebrew图形化界面。*刚用mac不想碰终端可以用这个过渡，个人还是喜欢用终端*
 
