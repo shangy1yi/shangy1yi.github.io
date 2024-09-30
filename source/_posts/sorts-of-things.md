@@ -35,6 +35,7 @@ type: null
 updated: '2024-09-30T17:50:19.062+08:00'
 ---
 最近趁着有空，将自己使用的比较不错的 Win/Mac软件、网站、生活好物给整理了一下，给未来的自己留个档，期待也给你一些帮助。
+![](https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/image.1ovem4027t.png)
 
 # 软件
 
