@@ -90,7 +90,7 @@ updated: '2024-10-02T18:43:44.632+08:00'
 
 * [**appstorrent**](https://appstorrent.ru/)：Mac软件资源站
 * [**xmac**](https://xmac.app/)：Mac软件资源站
-* [**nite07**](https://software.nite07.com/)：nite伟大，仔细查看
+* [**nite07**](https://software.nite07.com/)：资源站，nite伟大
 * [**oh-my-foss-android**](https://github.com/xlucn/oh-my-foss-android)：实用、良心开源安卓软件收集
 * [**银河录像局**](https://nf.video/)：个人使用下来体验最好的合租平台
 * [**hellogithub**](https://hellogithub.com/)：开源项目整理与热度排行榜单
