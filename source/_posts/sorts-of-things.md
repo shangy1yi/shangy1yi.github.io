@@ -32,7 +32,7 @@ tags:
 title: 非常好用的软件/网站推荐
 topic: null
 type: null
-updated: '2024-10-01T19:02:28.373+08:00'
+updated: '2024-10-02T16:09:32.017+08:00'
 ---
 最近趁着有空，将自己使用的比较不错的 Win/Mac软件、网站、生活好物给整理了一下，给未来的自己留个档，期待也给你一些帮助。
 ![](https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/image.1ovem4027t.png)
@@ -75,5 +75,8 @@ updated: '2024-10-01T19:02:28.373+08:00'
 * [**Motrix**](https://motrix.app/)：（免费）下载器，支持HTTP, FTP, BitTorrent, Magnet等。
 * [**Squirrel**](https://github.com/rime/squirrel)：（免费）输入法。简洁美观，高度自定义化
 * [**Battery**](https://github.com/actuallymentor/battery)：（免费）电池保护工具。*平平无奇，简单好用*
-* [ Vmware Fusion 13](https://blogs.vmware.com/teamfusion/2024/05/fusion-pro-now-available-free-for-personal-use.html)：（免费）虚拟机。Parallels Desktop平替
+* [ **Vmware Fusion 13**](https://blogs.vmware.com/teamfusion/2024/05/fusion-pro-now-available-free-for-personal-use.html)：（免费）虚拟机。Parallels Desktop平替
 
+# 网站
+
+## 工具类
