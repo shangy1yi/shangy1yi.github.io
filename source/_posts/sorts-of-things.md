@@ -32,7 +32,7 @@ tags:
 title: 非常好用的软件/网站推荐
 topic: null
 type: null
-updated: '2024-10-02T16:26:48.832+08:00'
+updated: '2024-10-02T18:43:44.632+08:00'
 ---
 最近趁着有空，将自己使用的比较不错的 Win/Mac软件、网站、生活好物给整理了一下，给未来的自己留个档，期待也给你一些帮助。
 ![](https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/image.1ovem4027t.png)
@@ -85,11 +85,13 @@ updated: '2024-10-02T16:26:48.832+08:00'
 * [**meiguodizhi**](https://www.meiguodizhi.com/)：用于支付的虚拟地址
 * [**cobalt**](https://cobalt.tools/)：最好的YouTube、X...视频下载平台
 * [**Spotify Downloader**](https://spotifydown.com/)：Spotify音乐下载
+
 ## 资源类
 
 * [**appstorrent**](https://appstorrent.ru/)：Mac软件资源站
 * [**xmac**](https://xmac.app/)：Mac软件资源站
+* [**nite07**](https://software.nite07.com/)：nite伟大，仔细查看
 * [**oh-my-foss-android**](https://github.com/xlucn/oh-my-foss-android)：实用、良心开源安卓软件收集
 * [**银河录像局**](https://nf.video/)：个人使用下来体验最好的合租平台
 * [**hellogithub**](https://hellogithub.com/)：开源项目整理与热度排行榜单
-* [**nite07**](https://software.nite07.com/)：nite伟大，仔细查看
+
