@@ -4,7 +4,7 @@ author: null
 banner: null
 breadcrumb: null
 categories:
-- - 每日新闻
+- - 科技&产品
 - - 科技&产品
 comments: null
 cover: https://ph-files.imgix.net/04947dd4-d9a6-47c5-9361-ed708cd432e9.png?auto=format&fit=crop&frame=1&h=512&w=1024
