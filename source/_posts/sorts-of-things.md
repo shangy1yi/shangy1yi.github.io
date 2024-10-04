@@ -29,10 +29,10 @@ tags:
 - 软件
 - 网站
 - 生活好物
-title: 非常好用的软件/网站推荐
+title: 非常好用的软件/网站/插件推荐
 topic: null
 type: null
-updated: '2024-10-02T20:11:01.138+08:00'
+updated: '2024-10-04T21:03:50.363+08:00'
 ---
 最近趁着有空，将自己使用的比较不错的 Win/Mac软件、网站、生活好物给整理了一下，给未来的自己留个档，期待也给你一些帮助。
 ![](https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/image.1ovem4027t.png)
@@ -94,4 +94,13 @@ updated: '2024-10-02T20:11:01.138+08:00'
 * [**oh-my-foss-android**](https://github.com/xlucn/oh-my-foss-android)：实用、良心开源安卓软件收集
 * [**银河录像局**](https://nf.video/)：个人使用下来体验最好的合租平台
 * [**hellogithub**](https://hellogithub.com/)：开源项目整理与热度排行榜单
+
+# 浏览器插件
+
+* [**b站空降助手**](https://chromewebstore.google.com/detail/b%E7%AB%99%E7%A9%BA%E9%99%8D%E5%8A%A9%E6%89%8B/eaoelafamejbnggahofapllmfhlhajdd)：自动跳过视频中的赞助广告、订阅提醒等片段
+* [**control-panel-for-twitter**](https://github.com/insin/control-panel-for-twitter)：X的优化工具，ios版需要付费，但功能对得起价格
+* [**AHA Music**](https://chromewebstore.google.com/detail/aha-music-song-finder-for/dpacanjfikmhoddligfbehkpomnbgblf)：浏览器音乐识别
+* [**Chrono Download Manager**](https://chromewebstore.google.com/detail/chrono-download-manager/mciiogijehkdemklbdcbfkefimifhecn)：浏览器下载管理器
+* [**东方永页机**](https://greasyfork.org/zh-CN/scripts/438684-pagetual)：自动翻页 - 加载并拼接下一分页内容至当前页尾，智能适配任意网页
+* [**Extension Manager**](https://chromewebstore.google.com/detail/extension-manager/gjldcdngmdknpinoemndlidpcabkggco)：浏览器插件管理器，对于我这种工具收集爱好者很方便
 
