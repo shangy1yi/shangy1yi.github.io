@@ -106,4 +106,5 @@ updated: '2024-10-04T21:03:50.363+08:00'
 * [**Dark Reader**](https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh)：自动切换网页暗色模式
 * [**RSS+**](https://greasyfork.org/zh-CN/scripts/373252-rss-show-site-all-rss)：显示当前网站所有的 RSS
 * [**uBlock Origin Lite**](https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh)：uBlock新版，比原版简洁很多，但功能没少
+* [**Immersive Translate**](https://chromewebstore.google.com/detail/immersive-translate-trans/bpoadfkcbjbfhfodiogcnhhhpibjhbnh)：沉浸式翻译，我搭配自建的One-Api和DeepL用起来非常顺心
 
