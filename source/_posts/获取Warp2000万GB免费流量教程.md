@@ -27,10 +27,9 @@ tags: []
 title: 获取Warp2000万GB免费流量教程
 topic: null
 type: null
-updated: '2024-10-05T03:37:58.023+08:00'
+updated: '2024-10-05T04:00:49.173+08:00'
 ---
-Telegram Warp群已废，如何获取Warp2000万GB免费流量
-Telegram Warp群已废，如何获取Warp2000万GB免费流量
+# Telegram Warp群已废，如何获取Warp2000万GB免费流量
 
 步骤 1：注册 Replit 账号
 前往 Replit 官网。
