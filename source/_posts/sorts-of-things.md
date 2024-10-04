@@ -103,4 +103,6 @@ updated: '2024-10-04T21:03:50.363+08:00'
 * [**Chrono Download Manager**](https://chromewebstore.google.com/detail/chrono-download-manager/mciiogijehkdemklbdcbfkefimifhecn)：浏览器下载管理器
 * [**东方永页机**](https://greasyfork.org/zh-CN/scripts/438684-pagetual)：自动翻页 - 加载并拼接下一分页内容至当前页尾，智能适配任意网页
 * [**Extension Manager**](https://chromewebstore.google.com/detail/extension-manager/gjldcdngmdknpinoemndlidpcabkggco)：浏览器插件管理器，对于我这种工具收集爱好者很方便
+* [**Dark Reader**](https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh)：自动切换网页暗色模式
+* [**RSS+**](https://greasyfork.org/zh-CN/scripts/373252-rss-show-site-all-rss)：显示当前网站所有的 RSS
 
