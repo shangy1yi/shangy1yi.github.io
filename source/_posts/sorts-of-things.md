@@ -47,7 +47,7 @@ updated: '2024-10-05T12:16:35.541+08:00'
 * [**AudioRelay**](https://audiorelay.net/)：（免费）设备间音频串流工具。*当你没有音响，但有个音质很好的笔记本或者平板电脑时，可以用这个工具串流音频，很方便*
 * [**有道词典**](https://fanyi.youdao.com/download-Windows?keyfrom=fanyiweb_navigation)：（免费）*只推荐截图翻译功能，放在后台隐藏图标眼不见心不烦，要用的时候按快捷键就可以截图翻译，也可以当orc软件用，ocr识别率很高*
 * [**copycat clipboard**](https://www.entilitystudio.com/copycat-clipboard?ref=producthunt)：（免费）剪切板整理与多设备剪切板同步工具。*有付费功能，但免费的部分已经够用，梦寐以求的剪切板体验，牛*
-* [**follow**](https://app.follow.is/)：（免费）RSS阅读器。*没话说配得上作者所定义的次时代信息浏览器，美观好用，但现在需要邀请码才能用，一码难求*
+* [**follow**](https://app.follow.is/)：（免费）RSS阅读器。*配得上作者所定义的次时代信息浏览器，美观好用，但现在需要邀请码才能用*
 * [**OneCommander**](https://onecommander.com/):（免费）文件管理器。*我用到过的最好的文件管理器，可能不是最美观的，但双窗格浏览器太提升效率了，直接替代win原装文件管理器*
 * [**finalshell**](https://finalshell.net/)：（免费）强大的SSH客户端*伟大无需多言*
 * [**Nekobox**](https://getnekobox.com/en/)：（免费）代理工具。*我们二次元太牛啦*
