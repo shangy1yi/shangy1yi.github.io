@@ -32,7 +32,7 @@ tags:
 title: sorts-of-things|个人常用工具推荐
 topic: null
 type: null
-updated: '2024-10-04T21:03:50.363+08:00'
+updated: '2024-10-05T12:16:35.541+08:00'
 ---
 最近趁着有空，将自己使用的比较不错的 Win/Mac软件、网站、生活好物给整理了一下，给未来的自己留个档，期待也给你一些帮助。
 ![](https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/image.1ovem4027t.png)
@@ -68,14 +68,14 @@ updated: '2024-10-04T21:03:50.363+08:00'
 * [**PrettyClean**](https://www.prettyclean.cc/zh)：（免费）磁盘清理工具。*很简洁*
 * [**Keka**](https://www.keka.io/en/)：（免费）文件压缩工具。*能不用但不能没有*
 * [**IINA**](https://iina.io/)：（免费）视频播放器。*这个不敢说最好，但是很简洁好用*
-* [**Ice**](https://github.com/jordanbaird/Ice)：（免费）菜单栏管理器。*强大而美观*
-* [**Whisky**](https://getwhisky.app/)：（免费）利用Apple's Game Porting Toolkit运行win平台游戏的工具。*伟大无需多言*
-* [**Electerm**](https://apps.apple.com/us/app/serverbox/id1586449703)：（免费）强大的SSH客户端。*Mac上的finalshell，伟大无需多言，用的人很少，算是发现宝藏了*
+* [**Ice**](https://github.com/jordanbaird/Ice)：（免费）菜单栏管理器。*强大而美观** [**Electerm**](https://apps.apple.com/us/app/serverbox/id1586449703)：（免费）强大的SSH客户端。*Mac上的finalshell，伟大无需多言，用的人很少，算是发现宝藏了*
 * [**Upscayl**](https://www.upscayl.org/)：（免费）本地AI 图片放大工具。*提供客户端的能力，超级方便好用*
 * [**Motrix**](https://motrix.app/)：（免费）下载器，支持HTTP, FTP, BitTorrent, Magnet等。
 * [**Squirrel**](https://github.com/rime/squirrel)：（免费）输入法。*简洁美观，高度自定义化*
 * [**AIDente**](https://apphousekitchen.com/)：（付费）电池保护工具。*功能强大，简单好用，保护你的爱机*
 * [ **Vmware Fusion 13**](https://blogs.vmware.com/teamfusion/2024/05/fusion-pro-now-available-free-for-personal-use.html)：（免费）虚拟机。Parallels Desktop平替
+* [**Whisky**](https://getwhisky.app/)：（免费）利用Apple's Game Porting Toolkit运行win平台游戏的工具。
+* [**Mythic**](https://github.com/MythicApp/Mythic)：（免费）# 在 Mac 上玩 Windows 游戏的最佳方式，一个开源的 macOS 游戏启动器
 
 # 网站
 
