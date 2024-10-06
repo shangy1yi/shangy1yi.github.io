@@ -41,23 +41,41 @@ updated: '2024-10-07T00:46:37.165+08:00'
 
 ## Windows
 
+### 美化
+
 * [**iTop Easy Desktop**](https://www.itopvpn.com/itop-easy-desktop?name=ied&ver=2.6.0.8&lan=&insur=other&to=homepage):（免费）桌面整理工具，可以按照文件类型自动分类桌面上的快捷方式和文档文件。*可以把桌面整理的干干净净，简洁主义者狂喜*
-* [**PixPin**](https://pixpinapp.com/start/quick-start)：（免费）拥有强大的截图功能，但不只是一款截图工具。*Win上最好用的截图软件*
 * [**TranslucentTB**](https://translucenttb.github.io/)：（免费）可使 Windows 任务栏半透明/透明。*单纯好看*
-* [**AudioRelay**](https://audiorelay.net/)：（免费）设备间音频串流工具。*当你没有音响，但有个音质很好的笔记本或者平板电脑时，可以用这个工具串流音频，很方便*
+
+### 工具
+
+* [**PixPin**](https://pixpinapp.com/start/quick-start)：（免费）拥有强大的截图功能，但不只是一款截图工具。*Win上最好用的截图软件*
 * [**有道词典**](https://fanyi.youdao.com/download-Windows?keyfrom=fanyiweb_navigation)：（免费）*只推荐截图翻译功能，放在后台隐藏图标眼不见心不烦，要用的时候按快捷键就可以截图翻译，也可以当orc软件用，ocr识别率很高*
 * [**copycat clipboard**](https://www.entilitystudio.com/copycat-clipboard?ref=producthunt)：（免费）剪切板整理与多设备剪切板同步工具。*有付费功能，但免费的部分已经够用，梦寐以求的剪切板体验，牛*
-* [**follow**](https://app.follow.is/)：（免费）RSS阅读器。*配得上作者所定义的次时代信息浏览器，美观好用，但现在需要邀请码才能用*
 * [**OneCommander**](https://onecommander.com/):（免费）文件管理器。*我用到过的最好的文件管理器，可能不是最美观的，但双窗格浏览器太提升效率了，直接替代win原装文件管理器*
-* [**finalshell**](https://finalshell.net/)：（免费）强大的SSH客户端*伟大无需多言*
-* [**Nekobox**](https://getnekobox.com/en/)：（免费）代理工具。*我们二次元太牛啦*
 * [**Upscayl**](https://www.upscayl.org/)：（免费）本地AI 图片放大工具。*提供客户端的能力，超级方便好用*
-* [**PotPlayer**](https://potplayer.org/en/)：（免费）视频播放器。*win上最好的播放器没有之一*
 * [**Motrix**](https://motrix.app/)：（免费）下载器，支持HTTP, FTP, BitTorrent, Magnet等。
 * [**visum图片浏览器**](https://luandersonn.com/visum/)：（免费）图片浏览器。*我用过最好用的图片浏览器，支持图片大小，分辨率调整*
+* [**AudioRelay**](https://audiorelay.net/)：（免费）设备间音频串流工具。*当你没有音响，但有个音质很好的笔记本或者平板电脑时，可以用这个工具串流音频，很方便*
+
+### 网络
+
+* [**finalshell**](https://finalshell.net/)：（免费）强大的SSH客户端*伟大无需多言*
+* [**Nekobox**](https://getnekobox.com/en/)：（免费）代理工具。*我们二次元太牛啦*
+
+### 视频、音乐与游戏
+
+* [**PotPlayer**](https://potplayer.org/en/)：（免费）视频播放器。*win上最好的播放器没有之一*
+* [**follow**](https://app.follow.is/)：（免费）RSS阅读器。*配得上作者所定义的次时代信息浏览器，美观好用，但现在需要邀请码才能用*
 
 ## MacOS
 
+### 美化
+
+* [**Ice**](https://github.com/jordanbaird/Ice)：（免费）菜单栏管理器。*强大而美观*
+
+### 工具
+
+* [**Squirrel**](https://github.com/rime/squirrel)：（免费）输入法。*简洁美观，高度自定义化*
 * [**MessAuto**](https://github.com/LeeeSe/MessAuto)：（免费）接收手机短信验证码并自动回填到 Mac 上的工具。*很好用，解决了每次从手机看然后手填的麻烦。*
 * [**Shottr**](https://shottr.cc/)：（免费）*超级喜欢的一个截图软件，支持滚动截图、标注等功能。*
 * [**Raycast**](https://www.raycast.com/)：（免费）全局搜索工具。*超级好用和强大，也有剪切板整理功能，如果不需要多设备同步功能的话可以不装copycat，只留这个*
@@ -68,16 +86,26 @@ updated: '2024-10-07T00:46:37.165+08:00'
 * [**applite**](https://aerolite.dev/applite)：（免费）Homebrew图形化界面。*刚用mac不想碰终端可以用这个过渡，个人还是喜欢用终端*
 * [**PrettyClean**](https://www.prettyclean.cc/zh)：（免费）磁盘清理工具。*很简洁*
 * [**Keka**](https://www.keka.io/en/)：（免费）文件压缩工具。*能不用但不能没有*
-* [**IINA**](https://iina.io/)：（免费）视频播放器。*这个不敢说最好，但是很简洁好用*
-* [**Ice**](https://github.com/jordanbaird/Ice)：（免费）菜单栏管理器。*强大而美观** [**Electerm**](https://apps.apple.com/us/app/serverbox/id1586449703)：（免费）强大的SSH客户端。*Mac上的finalshell，伟大无需多言，用的人很少，算是发现宝藏了*
 * [**Upscayl**](https://www.upscayl.org/)：（免费）本地AI 图片放大工具。*提供客户端的能力，超级方便好用*
 * [**Motrix**](https://motrix.app/)：（免费）下载器，支持HTTP, FTP, BitTorrent, Magnet等。
-* [**Squirrel**](https://github.com/rime/squirrel)：（免费）输入法。*简洁美观，高度自定义化*
 * [**AIDente**](https://apphousekitchen.com/)：（付费）电池保护工具。*功能强大，简单好用，保护你的爱机*
-* [ **Parallels Desktop**](https://www.parallels.cn/products/desktop/?)：（付费）虚拟机。mac上性能最好的虚拟机，没有之一
-* [**Whisky**](https://getwhisky.app/)：（免费）利用Apple's Game Porting Toolkit运行win平台游戏的工具。
-* [**Mythic**](https://github.com/MythicApp/Mythic)：（免费）在 Mac 上玩 Windows 游戏的最佳方式，一个开源的 macOS 游戏启动器
+* [**Parallels Desktop**](https://www.parallels.cn/products/desktop/?)：（付费）虚拟机。mac上性能最好的虚拟机，没有之一
 * [**Keysmith**](https://www.keysmith.app/)：（免费）自动化操作，快捷指令。*减少很多重复操作*
+
+### 网络
+
+* [**Electerm**](https://apps.apple.com/us/app/serverbox/id1586449703)：（免费）强大的SSH客户端。*Mac上的finalshell，伟大无需多言，用的人很少，算是发现宝藏了*
+
+
+### 视频、音乐与游戏
+
+* [**IINA**](https://iina.io/)：（免费）视频播放器。*这个不敢说最好，但是很简洁好用*
+* [**Mythic**](https://github.com/MythicApp/Mythic)：（免费）在 Mac 上玩 Windows 游戏的最佳方式，一个开源的 macOS 游戏启动器
+* [**Whisky**](https://getwhisky.app/)：（免费）利用Apple's Game Porting Toolkit运行win平台游戏的工具。
+
+<br>
+<br>
+<br>
 
 # 网站
 
@@ -97,6 +125,10 @@ updated: '2024-10-07T00:46:37.165+08:00'
 * [**银河录像局**](https://nf.video/)：个人使用下来体验最好的合租平台
 * [**hellogithub**](https://hellogithub.com/)：开源项目整理与热度排行榜单
 
+  <br>
+  <br>
+  <br>
+
 # 浏览器插件
 
 * [**b站空降助手**](https://chromewebstore.google.com/detail/b%E7%AB%99%E7%A9%BA%E9%99%8D%E5%8A%A9%E6%89%8B/eaoelafamejbnggahofapllmfhlhajdd)：自动跳过视频中的赞助广告、订阅提醒等片段
@@ -111,3 +143,4 @@ updated: '2024-10-07T00:46:37.165+08:00'
 * [**uBlock Origin Lite**](https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh)：uBlock新版，比原版简洁很多，但功能没少
 * [**Immersive Translate**](https://chromewebstore.google.com/detail/immersive-translate-trans/bpoadfkcbjbfhfodiogcnhhhpibjhbnh)：沉浸式翻译，我搭配自建的One-Api和DeepL用起来非常顺心
 * [**easy bookmark search**](https://syouiti.lanzout.com/iRfWs2bmtvkb)：和4o一起写的谷歌书签搜索插件，我自己有书签搜索需求，于是乎写了一个
+
