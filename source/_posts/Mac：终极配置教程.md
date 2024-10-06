@@ -1173,7 +1173,6 @@ pip install pandas matplotlib glob2 tqdm opencv-python scipy scikit-learn mlx
 `Pinokio` 就可以一键安装 LobeChat，Stable Diffusion web UI 等等
 [下载链接](https://docs.pinokio.computer/download/applemac.html)
 
-![Image](https://docs.pinokio.computer/assets/macinstall.ba4fb632.gif)
 
 ## LM Studio
 
