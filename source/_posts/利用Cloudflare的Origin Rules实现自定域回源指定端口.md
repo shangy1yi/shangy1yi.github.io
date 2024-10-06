@@ -32,7 +32,7 @@ type: null
 updated: '2024-10-07T00:26:23.754+08:00'
 ---
 转载自 [`https://link.syouiti.com/cf-origin-rules`](https://link.syouiti.com/cf-origin-rules)
-归档
+<mark color="green">归档</mark>
 
 通过添加Cloudflare的Origin Rules回源规则，可以将源服务器上的某个端口服务交由Cloudflare所绑定的自定义域名的CDN所反代，实现指定端口转发。
 
@@ -57,3 +57,4 @@ updated: '2024-10-07T00:26:23.754+08:00'
 ![](https://hyrikuma-akari.top/images/cf-origin-rules/rule2.png)
 
 此时再次访问域名[chat.hyrikuma-akari.top ](https://chat.hyrikuma-akari.top/)，可以看到已经成功解析到对应的源服务器端口服务上了。
+
