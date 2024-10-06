@@ -30,9 +30,10 @@ tags:
 - 网站
 - 生活好物
 title: sorts-of-things|个人常用工具推荐
+top: '100'
 topic: null
 type: null
-updated: '2024-10-07T01:19:45.363+08:00'
+updated: '2024-10-07T01:36:17.655+08:00'
 ---
 最近趁着有空，将自己使用的比较不错的 Win/Mac软件、网站、生活好物给整理了一下，给未来的自己留个档，期待也给你一些帮助。
 ![](https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/image.1ovem4027t.png)
