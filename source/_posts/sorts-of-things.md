@@ -74,7 +74,7 @@ updated: '2024-10-07T00:46:37.165+08:00'
 * [**Motrix**](https://motrix.app/)：（免费）下载器，支持HTTP, FTP, BitTorrent, Magnet等。
 * [**Squirrel**](https://github.com/rime/squirrel)：（免费）输入法。*简洁美观，高度自定义化*
 * [**AIDente**](https://apphousekitchen.com/)：（付费）电池保护工具。*功能强大，简单好用，保护你的爱机*
-* [ **Vmware Fusion 13**](https://blogs.vmware.com/teamfusion/2024/05/fusion-pro-now-available-free-for-personal-use.html)：（免费）虚拟机。Parallels Desktop平替
+* [ **Parallels Desktop**](https://www.parallels.cn/products/desktop/?)：（付费）虚拟机。mac上性能最好的虚拟机，没有之一
 * [**Whisky**](https://getwhisky.app/)：（免费）利用Apple's Game Porting Toolkit运行win平台游戏的工具。
 * [**Mythic**](https://github.com/MythicApp/Mythic)：（免费）在 Mac 上玩 Windows 游戏的最佳方式，一个开源的 macOS 游戏启动器
 * [**Keysmith**](https://www.keysmith.app/)：（免费）自动化操作，快捷指令。*减少很多重复操作*
