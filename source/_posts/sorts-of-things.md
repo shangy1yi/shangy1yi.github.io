@@ -32,7 +32,7 @@ tags:
 title: sorts-of-things|个人常用工具推荐
 topic: null
 type: null
-updated: '2024-10-05T12:16:35.541+08:00'
+updated: '2024-10-06T23:20:23.617+08:00'
 ---
 最近趁着有空，将自己使用的比较不错的 Win/Mac软件、网站、生活好物给整理了一下，给未来的自己留个档，期待也给你一些帮助。
 ![](https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/image.1ovem4027t.png)
@@ -54,6 +54,7 @@ updated: '2024-10-05T12:16:35.541+08:00'
 * [**Upscayl**](https://www.upscayl.org/)：（免费）本地AI 图片放大工具。*提供客户端的能力，超级方便好用*
 * [**PotPlayer**](https://potplayer.org/en/)：（免费）视频播放器。*win上最好的播放器没有之一*
 * [**Motrix**](https://motrix.app/)：（免费）下载器，支持HTTP, FTP, BitTorrent, Magnet等。
+* [**visum图片浏览器**](https://luandersonn.com/visum/)：（免费）图片浏览器。*我用过最好用的图片浏览器，支持图片大小，分辨率调整*
 
 ## MacOS
 
@@ -108,4 +109,3 @@ updated: '2024-10-05T12:16:35.541+08:00'
 * [**uBlock Origin Lite**](https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh)：uBlock新版，比原版简洁很多，但功能没少
 * [**Immersive Translate**](https://chromewebstore.google.com/detail/immersive-translate-trans/bpoadfkcbjbfhfodiogcnhhhpibjhbnh)：沉浸式翻译，我搭配自建的One-Api和DeepL用起来非常顺心
 * [**easy bookmark search**](https://syouiti.lanzout.com/iRfWs2bmtvkb)：和4o一起写的谷歌书签搜索插件，我自己有书签搜索需求，于是乎写了一个
-
