@@ -106,7 +106,8 @@ updated: '2024-10-07T00:46:37.165+08:00'
 * [**东方永页机**](https://greasyfork.org/zh-CN/scripts/438684-pagetual)：自动翻页 - 加载并拼接下一分页内容至当前页尾，智能适配任意网页
 * [**Extension Manager**](https://chromewebstore.google.com/detail/extension-manager/gjldcdngmdknpinoemndlidpcabkggco)：浏览器插件管理器，对于我这种工具收集爱好者很方便
 * [**Dark Reader**](https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh)：自动切换网页暗色模式
-* [**RSS+**](https://greasyfork.org/zh-CN/scripts/373252-rss-show-site-all-rss)：显示当前网站所有的 RSS
+* [**RSS+**](https://greasyfork.org/zh-CN/scripts/373252-rss-show-site-all-rss)：显示当前网站所有的 RSS，油猴插件
+* [**RSSHub Radar**](https://chromewebstore.google.com/detail/rsshub-radar/kefjpfngnndepjbopdmoebkipbgkggaa)：线上当前网站所以的RSS，浏览器插件
 * [**uBlock Origin Lite**](https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh)：uBlock新版，比原版简洁很多，但功能没少
 * [**Immersive Translate**](https://chromewebstore.google.com/detail/immersive-translate-trans/bpoadfkcbjbfhfodiogcnhhhpibjhbnh)：沉浸式翻译，我搭配自建的One-Api和DeepL用起来非常顺心
 * [**easy bookmark search**](https://syouiti.lanzout.com/iRfWs2bmtvkb)：和4o一起写的谷歌书签搜索插件，我自己有书签搜索需求，于是乎写了一个
