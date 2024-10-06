@@ -32,7 +32,7 @@ tags:
 title: sorts-of-things|个人常用工具推荐
 topic: null
 type: null
-updated: '2024-10-07T00:46:37.165+08:00'
+updated: '2024-10-07T01:19:45.363+08:00'
 ---
 最近趁着有空，将自己使用的比较不错的 Win/Mac软件、网站、生活好物给整理了一下，给未来的自己留个档，期待也给你一些帮助。
 ![](https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/image.1ovem4027t.png)
@@ -69,6 +69,8 @@ updated: '2024-10-07T00:46:37.165+08:00'
 
 ## MacOS
 
+Mac配置教程可以看我这篇文章：[《Mac：终极配置教程》](https://blog.syouiti.com/Mac%EF%BC%9A%E7%BB%88%E6%9E%81%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/)
+
 ### 美化
 
 * [**Ice**](https://github.com/jordanbaird/Ice)：（免费）菜单栏管理器。*强大而美观*
@@ -96,7 +98,6 @@ updated: '2024-10-07T00:46:37.165+08:00'
 ### 网络
 
 * [**Electerm**](https://apps.apple.com/us/app/serverbox/id1586449703)：（免费）强大的SSH客户端。*Mac上的finalshell，伟大无需多言，用的人很少，算是发现宝藏了*
-
 
 ### 视频、音乐与游戏
 
@@ -144,4 +145,3 @@ updated: '2024-10-07T00:46:37.165+08:00'
 * [**uBlock Origin Lite**](https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh)：uBlock新版，比原版简洁很多，但功能没少
 * [**Immersive Translate**](https://chromewebstore.google.com/detail/immersive-translate-trans/bpoadfkcbjbfhfodiogcnhhhpibjhbnh)：沉浸式翻译，我搭配自建的One-Api和DeepL用起来非常顺心
 * [**easy bookmark search**](https://syouiti.lanzout.com/iRfWs2bmtvkb)：和4o一起写的谷歌书签搜索插件，我自己有书签搜索需求，于是乎写了一个
-
