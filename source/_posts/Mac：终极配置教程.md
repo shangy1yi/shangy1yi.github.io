@@ -434,6 +434,12 @@ cd rime-auto-deploy
 ./installer.rb
 ```
 
+<br>
+<br>
+<br>
+<br>
+<br>
+
 # 渗透工具
 
 > 注意因为渗透测试考虑到安全性，工具配置在虚拟机中更加合适，所以本文只介绍少数工具
@@ -484,7 +490,6 @@ echo "-Xmx2048m" >> /Applications/Burp\ Suite\ Professional.app/Contents/vmoptio
 [Yakit 官网](https://yaklang.io/)
 选择 macOS (Apple Sillion)
 
-![Image](/assets/wiki/mac/yakit.png)
 
 ### Wireshark
 
@@ -564,6 +569,12 @@ Would you like to use and setup a new database (recommended)? y
 ```bash
 brew install hashcat
 ```
+
+<br>
+<br>
+<br>
+<br>
+<br>
 
 # 开发配置
 
@@ -915,7 +926,6 @@ Virtualbox 更加适用于打靶机的情况，比如 [hackmyvm 靶场](https://
 
 Vmware 是除了 PD 以外非常优秀的虚拟机工具，如果觉得 PD 收费太高，那么可以选择 Vmware
 [官网下载](https://customerconnect.vmware.com/cn/downloads/info/slug/desktop_end_user_computing/vmware_fusion/13_0)
-注册码：`4C21U-2KK9Q-M8130-4V2QH-CF810`
 
 ## Firefox
 
@@ -1172,6 +1182,12 @@ pip install pandas matplotlib glob2 tqdm opencv-python scipy scikit-learn mlx
 ## Ollama
 
 [下载链接](https://www.ollama.com/download/mac)
+
+<br>
+<br>
+<br>
+<br>
+<br>
 
 # 常见问题
 
