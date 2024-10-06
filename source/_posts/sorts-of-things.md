@@ -72,6 +72,7 @@ updated: '2024-10-07T00:46:37.165+08:00'
 ### 美化
 
 * [**Ice**](https://github.com/jordanbaird/Ice)：（免费）菜单栏管理器。*强大而美观*
+* [**Topnotch**](https://topnotch.app/)：（免费）状态栏背景黑化，为壁纸添加圆角
 
 ### 工具
 
