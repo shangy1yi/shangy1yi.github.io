@@ -33,7 +33,7 @@ title: sorts-of-things|个人常用工具推荐
 top: '100'
 topic: null
 type: null
-updated: '2024-10-07T01:36:17.655+08:00'
+updated: '2024-10-07T21:49:37.839+08:00'
 ---
 最近趁着有空，将自己使用的比较不错的 Win/Mac软件、网站、生活好物给整理了一下，给未来的自己留个档，期待也给你一些帮助。
 ![](https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/image.1ovem4027t.png)
@@ -57,6 +57,7 @@ updated: '2024-10-07T01:36:17.655+08:00'
 * [**Motrix**](https://motrix.app/)：（免费）下载器，支持HTTP, FTP, BitTorrent, Magnet等。
 * [**visum图片浏览器**](https://luandersonn.com/visum/)：（免费）图片浏览器。*我用过最好用的图片浏览器，支持图片大小，分辨率调整*
 * [**AudioRelay**](https://audiorelay.net/)：（免费）设备间音频串流工具。*当你没有音响，但有个音质很好的笔记本或者平板电脑时，可以用这个工具串流音频，很方便*
+* [**localsend**](https://localsend.org/zh-CN)：（免费）多设备文件传输工具。*苹果设备用AirDrop，其他设备用localsend*
 
 ### 网络
 
