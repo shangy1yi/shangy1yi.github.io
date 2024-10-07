@@ -344,7 +344,20 @@ footer:
     #   - '[GitHub](/)'
   content: | # 支持 Markdown 格式
     本站由 [{author.name}](/) 创建。
-     ![](https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/image.8hggipsyos.webp)<a href="https://icp.gov.moe/?keyword=20244469" target="_blank">萌ICP备20244469号</a>
+        <head>
+            <style>
+                .image {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-top: -6px;
+                 }
+             </style>
+        </head>
+        <body>
+            <a href="你的萌icp网址" target="_blank">
+                <img src="https://moe.one/view/img/ico64.png" style="width:22px;height:22px" class="image">
+                萌ICP备20244469号
+            </a>
   # 主题用户越多，开发者维护和更新的积极性就越高，如果您喜欢本主题，请在适当的位置显示主题信息和仓库链接以表支持。
 
 
