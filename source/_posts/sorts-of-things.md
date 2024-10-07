@@ -71,7 +71,7 @@ updated: '2024-10-07T21:49:37.839+08:00'
 
 ## MacOS
 
-**Mac配置教程可以看我这篇文章：[《Mac：终极配置教程》](https://blog.syouiti.com/Mac%EF%BC%9A%E7%BB%88%E6%9E%81%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/)**
+**Mac配置教程可以看这篇文章：[《Mac：终极配置教程》](https://blog.syouiti.com/Mac%EF%BC%9A%E7%BB%88%E6%9E%81%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/)**
 
 ### 美化
 
