@@ -38,6 +38,8 @@ updated: '2024-10-23T00:25:28.545+08:00'
 
 {% twitter https://x.com/elonmusk/status/1848398370219364385 %}
 
+{% twitter https://x.com/AnthropicAI/status/1848742740420341988 %}
+
 Anthropic 宣布推出改进版的 Claude 3.5 Sonnet、全新的 Claude 3.5 Haiku， 以及一项新“模拟计算机访问”的新功能
 也就是Claude 模仿人类的方式使用计算机，例如查看屏幕、移动光标、点击按钮、输入文本等。
 开发者可以利用这项功能自动化重复任务、开发和测试软件、进行开放式任务（如研究），甚至在复杂的应用场景中进行交互。
