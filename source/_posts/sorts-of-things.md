@@ -30,10 +30,10 @@ tags:
 - 网站
 - 生活好物
 title: sorts-of-things|个人常用工具推荐
-top: '100'
+top: 100
 topic: null
 type: null
-updated: '2024-10-07T21:49:37.839+08:00'
+updated: '2024-10-31T20:14:13.099+08:00'
 ---
 最近趁着有空，将自己使用的比较不错的 Win/Mac软件、网站、生活好物给整理了一下，给未来的自己留个档，期待也给你一些帮助。
 ![](https://cdn.jsdelivr.net/gh/shangy1yi/picx-images-hosting@master/image.1ovem4027t.png)
@@ -96,6 +96,7 @@ updated: '2024-10-07T21:49:37.839+08:00'
 * [**AIDente**](https://apphousekitchen.com/)：（付费）电池保护工具。*功能强大，简单好用，保护你的爱机*
 * [**Parallels Desktop**](https://www.parallels.cn/products/desktop/?)：（付费）虚拟机。mac上性能最好的虚拟机，没有之一
 * [**Keysmith**](https://www.keysmith.app/)：（免费）自动化操作，快捷指令。*减少很多重复操作*
+* [**Swift Shift**](https://github.com/pablopunk/SwiftShift)：（免费）轻便、实用、开源的 macOS 窗口管理工具
 
 ### 网络
 
