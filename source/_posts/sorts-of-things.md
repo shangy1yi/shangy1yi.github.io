@@ -97,7 +97,7 @@ updated: '2024-11-11T18:12:09.408+08:00'
 * [**Parallels Desktop**](https://www.parallels.cn/products/desktop/?)：（付费）虚拟机。mac上性能最好的虚拟机，没有之一
 * [**Keysmith**](https://www.keysmith.app/)：（免费）自动化操作，快捷指令。*减少很多重复操作*
 * [**Swift Shift**](https://github.com/pablopunk/SwiftShift)：（免费）轻便、实用、开源的 macOS 窗口管理工具
-* [**RightMenu Master**](https://github.com/jaywcjlove/rightmenu-master)：（免费）右键菜单增强工具的必备神器，创建新文件，语法高亮快速预览，快速访问常用文件夹，一键新建终端窗口，多种复制功能：路径、文件名、直接复制文件，直接删除文件/文件夹
+* [**RightMenu Master**](https://apps.apple.com/us/app/rightmenu-master/id6737160756?mt=12)：（免费）右键菜单增强工具的必备神器，创建新文件，语法高亮快速预览，快速访问常用文件夹，一键新建终端窗口，多种复制功能：路径、文件名、直接复制文件，直接删除文件/文件夹
 
 ### 网络
 
@@ -130,7 +130,7 @@ updated: '2024-11-11T18:12:09.408+08:00'
 * [**oh-my-foss-android**](https://github.com/xlucn/oh-my-foss-android)：实用、良心开源安卓软件收集
 * [**银河录像局**](https://nf.video/)：个人使用下来体验最好的合租平台
 * [**hellogithub**](https://hellogithub.com/)：开源项目整理与热度排行榜单
-
+  
   <br>
   <br>
   <br>
@@ -149,3 +149,4 @@ updated: '2024-11-11T18:12:09.408+08:00'
 * [**uBlock Origin Lite**](https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh)：uBlock新版，比原版简洁很多，但功能没少
 * [**Immersive Translate**](https://chromewebstore.google.com/detail/immersive-translate-trans/bpoadfkcbjbfhfodiogcnhhhpibjhbnh)：沉浸式翻译，我搭配自建的One-Api和DeepL用起来非常顺心
 * [**easy bookmark search**](https://syouiti.lanzout.com/iRfWs2bmtvkb)：和4o一起写的谷歌书签搜索插件，我自己有书签搜索需求，于是乎写了一个
+
