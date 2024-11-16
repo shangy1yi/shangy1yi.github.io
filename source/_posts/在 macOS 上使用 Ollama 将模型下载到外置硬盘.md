@@ -30,11 +30,11 @@ tags:
 title: 在 macOS 上使用 Ollama 将模型下载到外置硬盘
 topic: null
 type: null
-updated: '2024-11-16T19:11:56.902+08:00'
+updated: '2024-11-16T19:20:10.882+08:00'
 ---
 *前言：Ollama 默认将模型下载到其内部数据目录`~/.ollama/models`，但mac的存储空间又十分金贵，网上找了很久也没找到在mac上改ollama默认模型下载目录的办法，摸索了一个方法在 macOS 上使用 Ollama 将模型下载到外置硬盘*
 
-使用符号链接 (Symbolic Link)
+### 使用符号链接 (Symbolic Link)
 
 * **步骤 1：将 Ollama 默认模型目录移动到外置硬盘**
 
