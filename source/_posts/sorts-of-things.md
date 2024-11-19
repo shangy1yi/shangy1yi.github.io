@@ -33,7 +33,7 @@ title: sorts-of-things|个人常用工具推荐
 top: 100
 topic: null
 type: null
-updated: '2024-11-16T21:48:42.402+08:00'
+updated: '2024-11-19T19:33:20.726+08:00'
 ---
 文章发布时间为2024/9/13，因为没法置顶文章，所以把文章发布时间设置在未来，这样文章就能一直在最前面😥如果你会置顶文章，请麻烦联系我
 
@@ -123,7 +123,6 @@ updated: '2024-11-16T21:48:42.402+08:00'
 * [**meiguodizhi**](https://www.meiguodizhi.com/)：用于支付的虚拟地址
 * [**cobalt**](https://cobalt.tools/)：最好的YouTube、X...视频下载平台
 * [**Spotify Downloader**](https://spotifydown.com/)：Spotify音乐下载
-
 ## 资源类
 
 * [**appstorrent**](https://appstorrent.ru/)：Mac软件资源站
@@ -132,7 +131,7 @@ updated: '2024-11-16T21:48:42.402+08:00'
 * [**oh-my-foss-android**](https://github.com/xlucn/oh-my-foss-android)：实用、良心开源安卓软件收集
 * [**银河录像局**](https://nf.video/)：个人使用下来体验最好的合租平台
 * [**hellogithub**](https://hellogithub.com/)：开源项目整理与热度排行榜单
-
+* [**Awesome Bilibili Extra**](https://github.com/HCLonely/awesome-bilibili-extra)：收集一些让我们在使用B站时更加方便的浏览器扩展/脚本/程序
   <br>
   <br>
   <br>
@@ -151,3 +150,4 @@ updated: '2024-11-16T21:48:42.402+08:00'
 * [**uBlock Origin Lite**](https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh)：uBlock新版，比原版简洁很多，但功能没少
 * [**Immersive Translate**](https://chromewebstore.google.com/detail/immersive-translate-trans/bpoadfkcbjbfhfodiogcnhhhpibjhbnh)：沉浸式翻译，我搭配自建的One-Api和DeepL用起来非常顺心
 * [**easy bookmark search**](https://syouiti.lanzout.com/iRfWs2bmtvkb)：和4o一起写的谷歌书签搜索插件，我自己有书签搜索需求，于是乎写了一个
+
