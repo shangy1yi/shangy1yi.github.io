@@ -100,6 +100,7 @@ updated: '2024-11-19T19:33:20.726+08:00'
 * [**Keysmith**](https://www.keysmith.app/)：（免费）自动化操作，快捷指令。*减少很多重复操作*
 * [**Swift Shift**](https://github.com/pablopunk/SwiftShift)：（免费）轻便、实用、开源的 macOS 窗口管理工具
 * [**RightMenu Master**](https://apps.apple.com/us/app/rightmenu-master/id6737160756?mt=12)：（免费）右键菜单增强工具的必备神器，创建新文件，语法高亮快速预览，快速访问常用文件夹，一键新建终端窗口，多种复制功能：路径、文件名、直接复制文件，直接删除文件/文件夹
+* [**DynamicLake Pro**](https://www.dynamiclake.com/)：（付费）为你的mac添加一个灵动岛。花钱但真的很好用
 
 ### 网络
 
