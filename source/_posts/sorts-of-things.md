@@ -124,6 +124,8 @@ updated: '2024-11-19T19:33:20.726+08:00'
 * [**meiguodizhi**](https://www.meiguodizhi.com/)：用于支付的虚拟地址
 * [**cobalt**](https://cobalt.tools/)：最好的YouTube、X...视频下载平台
 * [**Spotify Downloader**](https://spotifydown.com/)：Spotify音乐下载
+* [**jsoning**](https://jsoning.com/)：为开发者提供的在线 JSON 工具集合
+
 ## 资源类
 
 * [**appstorrent**](https://appstorrent.ru/)：Mac软件资源站
