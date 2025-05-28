@@ -43,6 +43,8 @@
 }
 :root {
   --theme-link: #2094f3;
+  --theme-color: #1cd0fd;
+  --theme-color-opa: rgba(28,208,253,0.3);
 }
 :root[data-theme="light"] {
   --site-bg: #f9fafb;
@@ -57,10 +59,22 @@
   --alpha60: rgba(255,255,255,0.6);
   --alpha75: rgba(255,255,255,0.75);
   --alpha100: #fff;
+  --chat-bg: #f1f2f5;
+  --chat-block: #fff;
+  --chat-border: #f2f2f2;
+  --chat-qq-right-bg: #09f;
+  --chat-qq-right-text: #fff;
+  --chat-wechat-news-num: #d8dadf;
+  --chat-video-button: rgba(255,255,255,0.902);
+  --chat-wechat-right-bg: #91ed61;
+  --chat-quote-blink-color: rgba(24,92,109,0.102);
+  --chat-wechat-quote-color: #808080;
+  --chat-wechat-quote-bg: rgba(128,128,128,0.102);
   --text: #000;
   --text-p1: #333;
   --text-p2: #4d4d4d;
   --text-p3: #808080;
+  --text-p3-opa: rgba(128,128,128,0.3);
   --text-p4: #999;
   --text-meta: #ccc;
   --text-code: #14181f;
@@ -78,10 +92,22 @@
   --alpha60: rgba(0,0,0,0.6);
   --alpha75: rgba(0,0,0,0.75);
   --alpha100: #000;
+  --chat-bg: #1f2224;
+  --chat-block: #25282a;
+  --chat-border: #303437;
+  --chat-qq-right-bg: rgba(0,153,255,0.502);
+  --chat-qq-right-text: rgba(255,255,255,0.6);
+  --chat-wechat-news-num: #25282a;
+  --chat-video-button: rgba(37,40,42,0.851);
+  --chat-wechat-right-bg: #305034;
+  --chat-quote-blink-color: rgba(24,92,109,0.149);
+  --chat-wechat-quote-color: #858585;
+  --chat-wechat-quote-bg: rgba(133,133,133,0.102);
   --text: #fff;
   --text-p1: #ccc;
   --text-p2: #b3b3b3;
   --text-p3: #858585;
+  --text-p3-opa: rgba(133,133,133,0.3);
   --text-p4: #707070;
   --text-meta: #4d4d4d;
   --text-code: #fff;
@@ -104,10 +130,22 @@
   --alpha60: rgba(255,255,255,0.6);
   --alpha75: rgba(255,255,255,0.75);
   --alpha100: #fff;
+  --chat-bg: #f1f2f5;
+  --chat-block: #fff;
+  --chat-border: #f2f2f2;
+  --chat-qq-right-bg: #09f;
+  --chat-qq-right-text: #fff;
+  --chat-wechat-news-num: #d8dadf;
+  --chat-video-button: rgba(255,255,255,0.902);
+  --chat-wechat-right-bg: #91ed61;
+  --chat-quote-blink-color: rgba(24,92,109,0.102);
+  --chat-wechat-quote-color: #808080;
+  --chat-wechat-quote-bg: rgba(128,128,128,0.102);
   --text: #000;
   --text-p1: #333;
   --text-p2: #4d4d4d;
   --text-p3: #808080;
+  --text-p3-opa: rgba(128,128,128,0.3);
   --text-p4: #999;
   --text-meta: #ccc;
   --text-code: #14181f;
@@ -126,10 +164,22 @@
     --alpha60: rgba(0,0,0,0.6);
     --alpha75: rgba(0,0,0,0.75);
     --alpha100: #000;
+    --chat-bg: #1f2224;
+    --chat-block: #25282a;
+    --chat-border: #303437;
+    --chat-qq-right-bg: rgba(0,153,255,0.502);
+    --chat-qq-right-text: rgba(255,255,255,0.6);
+    --chat-wechat-news-num: #25282a;
+    --chat-video-button: rgba(37,40,42,0.851);
+    --chat-wechat-right-bg: #305034;
+    --chat-quote-blink-color: rgba(24,92,109,0.149);
+    --chat-wechat-quote-color: #858585;
+    --chat-wechat-quote-bg: rgba(133,133,133,0.102);
     --text: #fff;
     --text-p1: #ccc;
     --text-p2: #b3b3b3;
     --text-p3: #858585;
+    --text-p3-opa: rgba(133,133,133,0.3);
     --text-p4: #707070;
     --text-meta: #4d4d4d;
     --text-code: #fff;
@@ -139,6 +189,16 @@
   :root:not([data-theme]) {
     --site-bg: #000;
   }
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([color-scheme]) img,
+  :root:not([color-scheme]) .md-text .tag-plugin.chat>.content .chatcell .user-main .talk.file>.content>.top>.right>svg.icon>path {
+    filter: brightness(75%) !important;
+  }
+}
+[color-scheme='dark'] img,
+[color-scheme='dark'] .md-text .tag-plugin.chat>.content .chatcell .user-main .talk.file>.content>.top>.right>svg.icon>path {
+  filter: brightness(75%) !important;
 }
 pre {
   font-family: Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif;
@@ -571,7 +631,8 @@ pre:not([class]):has(>code) {
   height: 4px;
   width: 4px;
 }
-.md-text .highlight >table::-webkit-scrollbar-track-piece {
+.md-text .highlight >table::-webkit-scrollbar-track-piece,
+.md-text .highlight >table::-webkit-scrollbar-corner {
   background: transparent;
 }
 .md-text .highlight >table::-webkit-scrollbar-thumb {
@@ -2141,6 +2202,824 @@ a.tag-plugin.button:hover {
   width: 100%;
   box-sizing: border-box;
 }
+.md-text .tag-plugin.chat {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 375px;
+  margin: 1rem auto;
+  border-radius: 8px;
+  background: var(--chat-block);
+  box-shadow: rgba(0,0,0,0.16) 0px 1px 4px;
+  display: flex;
+  flex-direction: column;
+  height: 658px;
+  width: 329px;
+  overflow: hidden;
+}
+.md-text .tag-plugin.chat .fs12 {
+  font-size: 0.75rem;
+}
+.md-text .tag-plugin.chat .cap {
+  color: var(--text-p3);
+}
+.md-text .tag-plugin.chat * {
+  word-break: break-all;
+}
+.md-text .tag-plugin.chat.iphone11 {
+  width: 329px;
+  height: 658px;
+  border-radius: 3em;
+  padding: 1em;
+  position: relative;
+  box-shadow: unset;
+}
+.md-text .tag-plugin.chat.iphone11 >.device-image {
+  background-image: url("https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/frame/iphone11.svg");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.md-text .tag-plugin.chat.iphone11 >.status-bar {
+  display: flex;
+  margin: 0.5em 0.7em;
+  justify-content: space-between;
+}
+.md-text .tag-plugin.chat.iphone11 >.status-bar >.left-items {
+  font-size: 0.75rem;
+  width: 5em;
+  display: flex;
+  justify-content: center;
+}
+.md-text .tag-plugin.chat.iphone11 >.status-bar >.right-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.md-text .tag-plugin.chat.iphone11 >.status-bar >.right-items >svg.icon {
+  width: 1.3em;
+  height: 1.3em;
+}
+.md-text .tag-plugin.chat.iphone11 >.status-bar >.right-items >svg.icon.earphone,
+.md-text .tag-plugin.chat.iphone11 >.status-bar >.right-items >svg.icon.bluetooth {
+  display: none;
+}
+.md-text .tag-plugin.chat.iphone11 >.status-bar >.right-items >svg.icon >path {
+  fill: var(--text-p1);
+}
+.md-text .tag-plugin.chat.iphone11 >.chat-navbar,
+.md-text .tag-plugin.chat.iphone11 >.content {
+  margin: 0 0.4em;
+}
+.md-text .tag-plugin.chat.iphone11 >.bottom {
+  margin: 0 0.4em;
+  padding-bottom: 0.75em;
+}
+.md-text .tag-plugin.chat >.chat-navbar {
+  display: flex;
+  padding: 0.3rem 0;
+  justify-content: space-between;
+  z-index: 4;
+}
+.md-text .tag-plugin.chat >.chat-navbar .left-items {
+  display: flex;
+  align-items: center;
+}
+.md-text .tag-plugin.chat >.chat-navbar .left-items .back-btn {
+  margin-left: 0.2em;
+}
+.md-text .tag-plugin.chat >.chat-navbar .left-items .back-btn .icon.back {
+  width: 1.3em;
+  height: 1.3em;
+}
+.md-text .tag-plugin.chat >.chat-navbar .left-items .news-num {
+  background: var(--chat-bg);
+  border-radius: 8px;
+  font-size: 0.75em;
+  padding: 0px 4px;
+  margin-right: 8px;
+  color: var(--text-p2);
+}
+.md-text .tag-plugin.chat >.chat-navbar .right-items>.more-btn {
+  height: 100%;
+  margin-right: 0.5em;
+}
+.md-text .tag-plugin.chat >.chat-navbar .left-items>.back-btn,
+.md-text .tag-plugin.chat >.chat-navbar .right-items>.more-btn {
+  display: flex;
+  align-items: center;
+}
+.md-text .tag-plugin.chat >.chat-navbar .left-items>.back-btn >svg>path,
+.md-text .tag-plugin.chat >.chat-navbar .right-items>.more-btn >svg>path {
+  fill: var(--text-p1);
+}
+.md-text .tag-plugin.chat >.content {
+  background: var(--chat-bg);
+  overflow: auto;
+  position: relative;
+  flex: 1;
+  z-index: 3;
+}
+.md-text .tag-plugin.chat >.content::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+.md-text .tag-plugin.chat >.content::-webkit-scrollbar-track-piece,
+.md-text .tag-plugin.chat >.content::-webkit-scrollbar-corner {
+  background: transparent;
+}
+.md-text .tag-plugin.chat >.content::-webkit-scrollbar-thumb {
+  background: transparent;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.md-text .tag-plugin.chat >.content:hover::-webkit-scrollbar-thumb {
+  background: var(--text-meta);
+}
+.md-text .tag-plugin.chat >.content:hover::-webkit-scrollbar-thumb:hover {
+  background: var(--text-p3);
+}
+.md-text .tag-plugin.chat >.bottom {
+  z-index: 1;
+  padding-bottom: 0.5em;
+  background: var(--chat-bg);
+  box-shadow: rgba(0,0,0,0.06) 0px 1px 1px 0px inset;
+}
+.md-text .tag-plugin.chat >.bottom .input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0.5em;
+  margin-top: 0.5em;
+  height: 32px;
+}
+.md-text .tag-plugin.chat >.bottom .input .input-text {
+  background: var(--chat-block);
+  border-radius: 6px;
+  width: calc(100% - 40px - 0.5em);
+  height: 100%;
+}
+.md-text .tag-plugin.chat >.bottom .input .submit-btn {
+  padding: 3px 6px;
+  background: var(--theme-color-opa);
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: var(--theme-color);
+}
+.md-text .tag-plugin.chat >.bottom .icons {
+  margin: 0 0.5em;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5em;
+}
+.md-text .tag-plugin.chat >.bottom .icons >svg.icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+.md-text .tag-plugin.chat >.bottom .icons >svg.icon.voice {
+  width: 1.3em !important;
+  height: 1.3em !important;
+}
+.md-text .tag-plugin.chat >.bottom .icons >svg.icon path {
+  fill: var(--text-p2);
+}
+.md-text .tag-plugin.chat >.content >div:first-child {
+  margin-top: 0.5em;
+}
+.md-text .tag-plugin.chat >.content >div:last-child {
+  margin-bottom: 0.5em;
+}
+.md-text .tag-plugin.chat >.content .chattip {
+  font-size: 0.75rem;
+  color: var(--text-p3);
+  margin: auto;
+  width: fit-content;
+  padding: 0.5em;
+}
+.md-text .tag-plugin.chat >.content .chatcell {
+  padding: 0.5em;
+}
+.md-text .tag-plugin.chat >.content .chatcell img {
+  border-radius: 6px;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-avatar {
+  float: left;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-avatar img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main {
+  padding: 0 0.5em;
+  display: flex;
+  flex-flow: column;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .header {
+  line-height: 1.5;
+  font-size: 13px;
+  margin-bottom: 0.3em;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .header .label {
+  padding: 0 4px;
+  color: var(--theme-color);
+  background: var(--theme-color-opa);
+  border-radius: 3px;
+  margin-right: 4px;
+  font-size: calc(0.75rem - .1rem);
+  font-weight: 600;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .header .name {
+  color: var(--text-p3);
+  font-size: 0.75rem;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk {
+  width: fit-content;
+  max-width: calc(100% - 32px);
+  background: var(--chat-block);
+  padding: calc((32px - 1.3 * 0.875rem) / 2) .5em;
+  border-radius: 6px;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk p {
+  font-size: 0.875rem;
+  line-height: 1.3;
+  margin: 0;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk >.error-img-to-show {
+  min-width: 100px;
+  min-height: 100px;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk >.quote {
+  color: var(--text-p3);
+  background: var(--text-p3-opa);
+  padding: 0.3rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 0.3em;
+  transition: color 0.5s ease-out, background 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out, background 0.5s ease-out;
+  -webkit-transition: color 0.5s ease-out, background 0.5s ease-out;
+  -o-transition: color 0.5s ease-out, background 0.5s ease-out;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk >.quote:hover {
+  color: var(--theme-color);
+  background: var(--theme-color-opa);
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk >.quote:hover .quote-user>svg>path {
+  fill: var(--theme-color);
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk >.quote .quote-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1em;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk >.quote .quote-user >span {
+  font-size: 0.75rem;
+  height: 16px;
+  line-height: 16px;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk >.quote .quote-user >svg {
+  width: 0.75em;
+  height: 0.75em;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk >.quote .quote-user >svg path {
+  fill: var(--text-p3);
+  transition: color 0.2s ease-out, 0.5s 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, 0.5s 0.2s ease-out;
+  -webkit-transition: color 0.2s ease-out, 0.5s 0.2s ease-out;
+  -o-transition: color 0.2s ease-out, 0.5s 0.2s ease-out;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk >.quote .quote-content {
+  margin-top: 0.3em;
+  font-size: 0.75rem;
+  line-height: 1;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk >.quote .quote-content span {
+  display: inline-block;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk >.quote .quote-content span p,
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk >.quote .quote-content span span {
+  font-size: 0.75rem;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.md .tag-plugin {
+  margin-bottom: 0;
+  margin: 0.2rem 0;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.image,
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.emoji,
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.link,
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.video,
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.file {
+  background: unset !important;
+  padding: 0 !important;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.link .link-card {
+  background: var(--chat-block);
+  box-shadow: unset;
+  transition: unset;
+  -webkit-transition: unset;
+  -moz-transition: unset;
+  -o-transition: unset;
+  border-radius: 6px;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.link .link-card:hover {
+  transform: none;
+  color: var(--text-p3);
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.link .link-card .top {
+  margin: 0.5em;
+  max-width: unset;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.link .link-card .top span {
+  white-space: unset;
+  font-size: 0.875rem;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.link .link-card .center {
+  margin: 0 0.5em;
+  column-gap: 0.5em;
+  display: flex;
+  align-self: unset;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.link .link-card .center .left {
+  width: calc(100% - 32px - 0.5em);
+  height: 32px;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.link .link-card .center .left .desc {
+  -webkit-line-clamp: 2;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.link .link-card .center .right {
+  flex: 1;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.link .link-card .bottom {
+  margin: 0.5em 0.5em 0.3em 0.5em;
+  padding-top: 0.3em;
+  border-top: 1px solid var(--chat-border);
+  display: flex;
+  align-items: center;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.link .link-card .bottom >svg,
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.link .link-card .bottom >span {
+  height: 0.8rem;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.voice {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 4.5px 0.5em;
+  cursor: pointer;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.voice .voice-btns {
+  flex-shrink: 0;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.voice .voice-btns svg.icon {
+  width: 1.3em;
+  height: 1.3em;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.voice .voice-btns svg.icon >path {
+  fill: var(--text-p1);
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.voice canvas.voice-wave {
+  margin: 0 0.5em;
+  height: 23px;
+  width: 36px;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.voice div.voice-wave {
+  height: 1.2em;
+  margin: 0 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.voice div.voice-wave .play-line {
+  position: absolute;
+  top: -20%;
+  left: 0;
+  height: 140%;
+  width: 1px;
+  background: var(--text-p2);
+  content: "";
+  opacity: 0;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.voice div.voice-wave .play-line.active {
+  opacity: 1;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.voice div.voice-wave .play-line.back {
+  transition: transform 0.3s linear !important;
+  -moz-transition: transform 0.3s linear !important;
+  -webkit-transition: transform 0.3s linear !important;
+  -o-transition: transform 0.3s linear !important;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.voice div.voice-wave span.voice-wave-item {
+  background: var(--text-p2);
+  width: 2px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.voice .voice-metas {
+  font-size: 0.875rem;
+  display: flex;
+  flex-shrink: 0;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.voice .voice-metas span {
+  line-height: 1;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.video {
+  position: relative;
+  line-height: 0;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.video .video-btns {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.video .video-btns .play-btn,
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.video .video-btns .pause-btn {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.video .video-btns svg.icon {
+  width: 3em;
+  height: 3em;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.video .video-btns svg.icon >path {
+  fill: var(--chat-video-button);
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.video video {
+  width: 100%;
+  border-radius: 6px;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.file {
+  background: transparent !important;
+  display: flex;
+  padding: unset !important;
+  column-gap: 0.3rem;
+  width: calc(100% - 32px);
+  cursor: pointer;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.file >.content {
+  background: var(--chat-block);
+  padding: 0.5em;
+  border-radius: 6px;
+  flex-grow: 1;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.file >.content >.top {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.file >.content >.top >.left {
+  height: 2.5rem;
+  flex-grow: 1;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.file >.content >.top >.left >span {
+  white-space: unset;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-p1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: calc(2.5rem / 2);
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.file >.content >.top >.right {
+  height: fit-content;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.file >.content >.top >.right >svg.icon {
+  height: 2.5rem;
+  width: unset;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.file >.content >.bottom {
+  margin-top: 0.5em;
+  display: flex;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.file >.content >.bottom >span {
+  line-height: 0.75rem;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.file >.download-btn {
+  display: flex;
+  align-items: flex-end;
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.file >.download-btn >svg.icon {
+  height: 1rem;
+  width: 1rem;
+  padding: 0.2em;
+  border-radius: 50%;
+  background: var(--chat-block);
+}
+.md-text .tag-plugin.chat >.content .chatcell .user-main .talk.file >.download-btn >svg.icon >path {
+  fill: var(--text-p1);
+}
+.md-text .tag-plugin.chat >.content .chatcell.right .user-avatar {
+  float: right;
+}
+.md-text .tag-plugin.chat >.content .chatcell.right .user-main {
+  flex-flow: row-reverse;
+  flex-wrap: wrap;
+}
+.md-text .tag-plugin.chat >.content .chatcell.right .user-main .header {
+  flex-basis: 100%;
+  justify-content: flex-end;
+}
+.md-text .tag-plugin.chat >.content .chatcell.right .user-main .talk.file {
+  flex-direction: row-reverse;
+}
+.md-text .tag-plugin.chat >.content .chatcell.right .user-main .talk.voice .voice-btns svg.icon>path {
+  fill: var(--chat-qq-right-text);
+}
+.md-text .tag-plugin.chat >.content .chatcell.right .user-main .talk.md,
+.md-text .tag-plugin.chat >.content .chatcell.right .user-main .talk.voice {
+  background: var(--chat-qq-right-bg);
+  color: var(--chat-qq-right-text);
+}
+.md-text .tag-plugin.chat >.content .chatcell.quote-blink {
+  animation: chatQuoteblinking 1s;
+}
+.md-text .tag-plugin.chat.person >.content >.chatcell >.user-main {
+  min-height: 32px;
+  justify-content: center;
+  align-content: unset;
+}
+.md-text .tag-plugin.chat.person >.content >.chatcell >.user-main >.header {
+  display: none;
+}
+.md-text .tag-plugin.chat.person >.content >.chatcell.right>.user-main {
+  justify-content: unset;
+  align-content: center;
+}
+.md-text .tag-plugin.chat.wechat.iphone11 {
+  background: var(--chat-bg);
+}
+.md-text .tag-plugin.chat.wechat.iphone11 >.bottom {
+  padding-bottom: 0.75rem;
+}
+.md-text .tag-plugin.chat.wechat >.chat-navbar {
+  background: var(--chat-bg);
+  box-shadow: rgba(27,31,35,0.02) 0px 1px 0px;
+}
+.md-text .tag-plugin.chat.wechat >.chat-navbar >.left-items >.news-num {
+  background: var(--chat-wechat-news-num);
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell img {
+  border-radius: 4px;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-avatar>img {
+  border-radius: 4px;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.header {
+  line-height: 1;
+  margin-bottom: 0.2em;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.header >.label {
+  display: none;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.talk {
+  position: relative;
+  border-radius: 4px;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.talk:before {
+  content: "";
+  position: absolute;
+  left: -2.5px;
+  top: 11px;
+  width: 10px;
+  height: 10px;
+  border-radius: 1.5px;
+  transform: rotate3d(0, 0, 1, -45deg);
+  background: var(--chat-block);
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.talk.emoji:before,
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.talk.video:before,
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.talk.image:before {
+  display: none;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.talk.link>.link-card,
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.talk.video>video,
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.talk.file>.content,
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.talk.image>img,
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.talk.emoji>img {
+  border-radius: 4px;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.talk.file .download-btn {
+  display: none;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.talk.voice {
+  padding: 8px 0.5em;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.talk.voice >.wechat-voice {
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  transform: rotate3d(0, 0, 1, 135deg);
+  margin-left: 0.2rem;
+  margin-right: 0;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.talk.voice >.wechat-voice >.voice-circle {
+  border: 2px solid var(--text-p1);
+  border-radius: 50%;
+  position: absolute;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.talk.voice >.wechat-voice >.voice-circle.first {
+  width: 5px;
+  height: 5px;
+  background: var(--text-p1);
+  top: 12px;
+  left: 12px;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.talk.voice >.wechat-voice >.voice-circle.second {
+  width: 13px;
+  height: 13px;
+  top: 8px;
+  left: 8px;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.talk.voice >.wechat-voice >.voice-circle.third {
+  width: 21px;
+  height: 21px;
+  top: 4px;
+  left: 4px;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.talk.voice >.wechat-voice.play >.second {
+  animation: wehcatVoicefadeInOut 1s infinite 0.2s;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.talk.voice >.wechat-voice.play >.third {
+  animation: wehcatVoicefadeInOut 1s infinite 0.4s;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.quote {
+  width: fit-content;
+  max-width: calc(100% - 32px);
+  background: var(--chat-wechat-quote-bg);
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  margin-top: 0.2em;
+  font-size: 0.75rem;
+  color: var(--chat-wechat-quote-color);
+  display: flex;
+  column-gap: 4px;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.quote.image-chat {
+  display: flex;
+  column-gap: 0.4em;
+  padding: 0.5em;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.quote img {
+  border-radius: 4px;
+  display: inline;
+  width: 64px;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.quote .tag-plugin {
+  margin-bottom: 0;
+  margin: 0.2rem 0;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.quote .tag-plugin.image img {
+  display: block;
+  width: unset;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.quote p,
+.md-text .tag-plugin.chat.wechat >.content >.chatcell >.user-main >.quote span {
+  font-size: 0.75rem;
+  margin: 0;
+  padding: 0;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell.right>.user-main >.header {
+  display: none;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell.right>.user-main >.talk:before {
+  right: -2px;
+  left: unset;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell.right>.user-main >.talk.md,
+.md-text .tag-plugin.chat.wechat >.content >.chatcell.right>.user-main >.talk.md:before,
+.md-text .tag-plugin.chat.wechat >.content >.chatcell.right>.user-main >.talk.voice,
+.md-text .tag-plugin.chat.wechat >.content >.chatcell.right>.user-main >.talk.voice:before {
+  background: var(--chat-wechat-right-bg);
+  color: var(--text-p1);
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell.right>.user-main >.talk.voice {
+  flex-direction: row-reverse;
+}
+.md-text .tag-plugin.chat.wechat >.content >.chatcell.right>.user-main >.talk.voice >.wechat-voice {
+  transform: rotate3d(0, 0, 1, -45deg);
+  margin-left: 0;
+  margin-right: 0.2rem;
+}
+.md-text .tag-plugin.chat.wechat >.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em;
+  column-gap: 0.5em;
+}
+.md-text .tag-plugin.chat.wechat >.bottom .input-text {
+  border-radius: 4px;
+  flex-grow: 1;
+  height: 2rem;
+  background: var(--chat-block);
+}
+.md-text .tag-plugin.chat.wechat >.bottom .icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.md-text .tag-plugin.chat.wechat >.bottom .icon >path {
+  fill: var(--text-p2);
+}
+@-moz-keyframes wehcatVoicefadeInOut {
+  0% {
+    opacity: 0; /*初始状态 透明度为0*/
+  }
+  100% {
+    opacity: 1; /*结尾状态 透明度为1*/
+  }
+}
+@-webkit-keyframes wehcatVoicefadeInOut {
+  0% {
+    opacity: 0; /*初始状态 透明度为0*/
+  }
+  100% {
+    opacity: 1; /*结尾状态 透明度为1*/
+  }
+}
+@-o-keyframes wehcatVoicefadeInOut {
+  0% {
+    opacity: 0; /*初始状态 透明度为0*/
+  }
+  100% {
+    opacity: 1; /*结尾状态 透明度为1*/
+  }
+}
+@keyframes wehcatVoicefadeInOut {
+  0% {
+    opacity: 0; /*初始状态 透明度为0*/
+  }
+  100% {
+    opacity: 1; /*结尾状态 透明度为1*/
+  }
+}
+@-moz-keyframes chatQuoteblinking {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: var(--chat-quote-blink-color);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+@-webkit-keyframes chatQuoteblinking {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: var(--chat-quote-blink-color);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+@-o-keyframes chatQuoteblinking {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: var(--chat-quote-blink-color);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+@keyframes chatQuoteblinking {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: var(--chat-quote-blink-color);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
 .md-text .tag-plugin.checkbox {
   display: flex;
   align-items: center;
@@ -2966,6 +3845,7 @@ details.folding[child=iframe] >div.body {
   -webkit-box-orient: vertical;
   overflow: hidden;
   -webkit-line-clamp: 2;
+  position: relative;
 }
 .users-wrap .user-card .card-link img {
   object-fit: cover;
@@ -2975,6 +3855,15 @@ details.folding[child=iframe] >div.body {
   background: var(--card);
   border-radius: 64px;
   margin: 0 0 0.5rem;
+}
+.users-wrap .user-card .label {
+  margin-top: 4px;
+  color: #fff;
+  font-size: 10px;
+  padding: 1px 4px;
+  border-radius: 16px;
+  font-weight: 60;
+  border: 1px solid #fff;
 }
 .users-wrap .user-card .card-link >img {
   transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
@@ -4145,6 +5034,7 @@ p>strong>span.tag-plugin.icon {
   width: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .sites-wrap .site-card .card-link >img {
   object-fit: cover;
@@ -4156,6 +5046,7 @@ p>strong>span.tag-plugin.icon {
 .sites-wrap .site-card .card-link .info {
   margin-top: 0.5rem;
   line-height: 1.2;
+  position: relative;
 }
 .sites-wrap .site-card .card-link .info >img {
   width: 28px;
@@ -4187,6 +5078,16 @@ p>strong>span.tag-plugin.icon {
   -webkit-box-orient: vertical;
   overflow: hidden;
   -webkit-line-clamp: 1;
+}
+.sites-wrap .site-card .card-link .label {
+  position: absolute;
+  color: initial;
+  font-weight: 600;
+  top: 1px;
+  right: 0;
+  font-size: 10px;
+  padding: 2px 4px;
+  border-radius: 16px;
 }
 .sites-wrap .site-card .card-link >img {
   transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
@@ -4301,11 +5202,16 @@ p>strong>span.tag-plugin.icon {
   text-align: justify;
   margin-top: 0.5rem;
 }
+.tag-plugin.tabs .tab-content .tab-pane {
+  display: block;
+}
 .tag-plugin.tabs .tab-content .tab-pane:not(.active) {
-  display: none;
+  visibility: hidden;
+  height: 0;
 }
 .tag-plugin.tabs .tab-content .tab-pane.active {
-  display: block;
+  visibility: visible;
+  height: auto;
 }
 .tag-plugin.tabs .tab-content:has(.grid-box) {
   width: 100%;
