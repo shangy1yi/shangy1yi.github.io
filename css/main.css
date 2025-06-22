@@ -195,13 +195,13 @@
   }
 }
 @media (prefers-color-scheme: dark) {
-  :root:not([color-scheme]) img,
-  :root:not([color-scheme]) .md-text .tag-plugin.chat>.content .chatcell .user-main .talk.file>.content>.top>.right>svg.icon>path {
+  :root:not([data-theme]) img,
+  :root:not([data-theme]) .md-text .tag-plugin.chat>.content .chatcell .user-main .talk.file>.content>.top>.right>svg.icon>path {
     filter: brightness(75%) !important;
   }
 }
-[color-scheme='dark'] img,
-[color-scheme='dark'] .md-text .tag-plugin.chat>.content .chatcell .user-main .talk.file>.content>.top>.right>svg.icon>path {
+[data-theme='dark'] img,
+[data-theme='dark'] .md-text .tag-plugin.chat>.content .chatcell .user-main .talk.file>.content>.top>.right>svg.icon>path {
   filter: brightness(75%) !important;
 }
 pre {
@@ -464,6 +464,78 @@ a.button.start.gradient {
     }
 }
 }
+.canonical-tip {
+  position: fixed;
+  text-align: center;
+  bottom: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 90%;
+  background-color: var(--block-hover);
+  color: var(--text-p1);
+  font-size: 1rem;
+  font-family: #fff8e1;
+  z-index: 9999999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1), 0 4px 16px rgba(0,0,0,0.1), 0 8px 32px rgba(0,0,0,0.1);
+  border-radius: 6px;
+}
+.canonical-tip .headline {
+  font-size: calc(17px + 11px);
+}
+.canonical-tip a {
+  display: block;
+  color: inherit;
+  padding: 1rem 2rem;
+}
+.canonical-tip.unofficial {
+  background-color: #f43;
+  color: #fff;
+  animation: breathe 3s ease-in-out infinite;
+}
+@-moz-keyframes breathe {
+  0% {
+    background-color: #f43;
+  }
+  50% {
+    background-color: #990d00;
+  }
+  100% {
+    background-color: #f43;
+  }
+}
+@-webkit-keyframes breathe {
+  0% {
+    background-color: #f43;
+  }
+  50% {
+    background-color: #990d00;
+  }
+  100% {
+    background-color: #f43;
+  }
+}
+@-o-keyframes breathe {
+  0% {
+    background-color: #f43;
+  }
+  50% {
+    background-color: #990d00;
+  }
+  100% {
+    background-color: #f43;
+  }
+}
+@keyframes breathe {
+  0% {
+    background-color: #f43;
+  }
+  50% {
+    background-color: #990d00;
+  }
+  100% {
+    background-color: #f43;
+  }
+}
 .cap {
   font-weight: 500;
   font-size: 0.8125rem;
@@ -501,14 +573,13 @@ a.button.start.gradient {
 .float-panel {
   position: sticky;
   grid-column-end: span 3;
-  padding: 4px;
   --inset: 2rem;
   right: 0;
   bottom: calc(var(--inset) * 2);
   margin-left: auto;
   margin-right: var(--inset);
   float: right;
-  z-index: 10;
+  z-index: 999999;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -518,7 +589,7 @@ a.button.start.gradient {
   -moz-transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
-  box-shadow: 0 0 2px rgba(0,0,0,0.05), 0 0 8px rgba(0,0,0,0.05);
+  box-shadow: 0 0 2px rgba(0,0,0,0.02), 0 2px 8px rgba(0,0,0,0.03), 0 4px 16px rgba(0,0,0,0.05);
   transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
@@ -528,6 +599,10 @@ a.button.start.gradient {
   .float-panel {
     margin-right: 3rem;
   }
+}
+.float-panel:before,
+.float-panel:after {
+  border-radius: 64px;
 }
 .float-panel:before,
 .float-panel:after {
@@ -545,12 +620,12 @@ a.button.start.gradient {
   backdrop-filter: blur(8px);
 }
 .float-panel:after {
-  --blur-px: 16px;
+  --blur-px: 32px;
   --blur-sat: 500%;
-  background: var(--alpha50);
+  background: var(--alpha20);
   backdrop-filter: saturate(var(--blur-sat)) blur(var(--blur-px));
-  mask: linear-gradient(#fff, 10%, rgba(255,255,255,0.2), 90%, #fff), linear-gradient(90deg, #fff, 10%, rgba(255,255,255,0.2), 90%, #fff);
-  box-shadow: inset 0 0 8px 1px #fff;
+  mask: linear-gradient(#fff, 10%, rgba(255,255,255,0.1), 90%, #fff), linear-gradient(90deg, #fff, 10%, rgba(255,255,255,0.1), 90%, #fff);
+  box-shadow: inset 0 0 4px 1px rgba(255,255,255,0.5);
   transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
@@ -566,8 +641,8 @@ a.button.start.gradient {
   cursor: pointer;
   color: var(--text);
   background: none;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   line-height: 0;
   font-size: 28px;
   margin: 0;
@@ -1730,7 +1805,7 @@ div.toast.show {
   margin: 0 1rem;
   border-radius: 64px;
   position: relative;
-  box-shadow: 0 0 2px rgba(0,0,0,0.05), 0 0 8px rgba(0,0,0,0.05);
+  box-shadow: 0 0 2px rgba(0,0,0,0.02), 0 2px 8px rgba(0,0,0,0.03), 0 4px 16px rgba(0,0,0,0.05);
   transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
@@ -1752,12 +1827,12 @@ div.toast.show {
   backdrop-filter: blur(8px);
 }
 .navbar-blur:after {
-  --blur-px: 16px;
+  --blur-px: 32px;
   --blur-sat: 500%;
-  background: var(--alpha50);
+  background: var(--alpha20);
   backdrop-filter: saturate(var(--blur-sat)) blur(var(--blur-px));
-  mask: linear-gradient(#fff, 10%, rgba(255,255,255,0.2), 90%, #fff), linear-gradient(90deg, #fff, 10%, rgba(255,255,255,0.2), 90%, #fff);
-  box-shadow: inset 0 0 8px 1px #fff;
+  mask: linear-gradient(#fff, 10%, rgba(255,255,255,0.1), 90%, #fff), linear-gradient(90deg, #fff, 10%, rgba(255,255,255,0.1), 90%, #fff);
+  box-shadow: inset 0 0 4px 1px rgba(255,255,255,0.5);
   transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
@@ -4989,12 +5064,12 @@ p>strong>span.tag-plugin.icon {
 .l_body[type=story] .md-text.content .ds-mdrender ul {
   margin-left: 0.5rem;
 }
-.tag-plugin.video {
+.tag-plugin.video-player {
   line-height: 0;
   margin: auto;
 }
-.tag-plugin.video video,
-.tag-plugin.video iframe {
+.tag-plugin.video-player video,
+.tag-plugin.video-player iframe {
   border-radius: 12px;
   box-shadow: 0 12px 16px -4px rgba(0,0,0,0.2);
   z-index: 1;
@@ -6341,18 +6416,18 @@ details.toc[open] >div.body section .header+.doc_tree {
 .l_left .sidebg {
   pointer-events: none;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  --inset: 0;
+  top: var(--inset);
+  bottom: var(--inset);
+  left: var(--inset);
+  right: var(--inset);
   background-position: center;
   background-size: cover;
   border-radius: 16px;
   --saturate: 300%;
   --blur-px: 100px;
   --brightness: 100%;
-  left: 20%;
-  right: 20%;
+  --inset: 32px;
   background-image: url("https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.13/image/sidebar-bg1@small.jpg");
   filter: saturate(var(--saturate)) brightness(var(--brightness)) blur(var(--blur-px));
 }
@@ -6364,13 +6439,19 @@ details.toc[open] >div.body section .header+.doc_tree {
   }
 }
 .l_left .leftbar-container {
-  height: calc(100vh - 16px);
+  height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
   word-break: break-all;
   text-align: justify;
   border-radius: 16px;
   overflow: hidden;
+}
+.l_left .leftbar-container >.widgets {
+  mask: linear-gradient(transparent, #fff, 10%, #fff, 90%, transparent);
+}
+.l_left .leftbar-container >* {
+  z-index: 1;
 }
 .l_left .leftbar-container:before,
 .l_left .leftbar-container:after {
@@ -6388,7 +6469,7 @@ details.toc[open] >div.body section .header+.doc_tree {
     background: rgba(255,255,255,0.5);
     box-shadow: inset 0 0 32px 1px rgba(255,255,255,0.5);
     backdrop-filter: saturate(300%);
-    mask: linear-gradient(#000, rgba(0,0,0,0.5), 80%, transparent, 90%, transparent);
+    mask: linear-gradient(#000, rgba(0,0,0,0.5), 70%, transparent, 90%, transparent);
   }
 }
 @media screen and (prefers-color-scheme: dark) {
@@ -6403,12 +6484,9 @@ details.toc[open] >div.body section .header+.doc_tree {
     background: var(--alpha100);
   }
   .l_left .sidebg {
-    left: 0;
-    right: 0;
+    --inset: 0;
     --saturate: 300%;
   }
-}
-@media screen and (max-width: 667px) and (prefers-color-scheme: dark) {
   .l_left .leftbar-container:after {
     background: var(--alpha20);
   }
@@ -6652,9 +6730,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   -webkit-transition: background 0.2s ease-out;
   -o-transition: background 0.2s ease-out;
 }
-.widget-wrapper.post-list .widget-body a.active {
-  background: var(--alpha50);
-}
+.widget-wrapper.post-list .widget-body a.active,
 .widget-wrapper.post-list .widget-body a:hover {
   background: var(--alpha100);
 }
