@@ -217,28 +217,57 @@ ol {
 table:not([class]) {
   border-collapse: collapse;
   overflow: auto;
-  display: block;
   margin: 1rem 0;
   max-width: 100%;
   vertical-align: text-top;
   --fsp: calc(17px - 2px);
   font-size: var(--fsp);
+  display: table;
+}
+table:not([class])::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+table:not([class])::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+table:not([class])::-webkit-scrollbar-thumb {
+  background: var(--text-meta);
+  cursor: pointer;
+  border-radius: 0;
+}
+table:not([class])::-webkit-scrollbar-thumb:hover {
+  background: var(--text-p3);
 }
 table:not([class]) th {
   background: var(--block);
+  border-top: 1px solid var(--block-border);
+  border-bottom: 1px solid var(--block-border);
 }
 table:not([class]) td,
 table:not([class]) th {
-  padding: 0.5em 1em;
-  border: 1px solid var(--block-border);
+  padding: 4px 1em;
   line-height: 1.5;
 }
 table:not([class]) tr {
-  word-break: keep-all;
-  white-space: nowrap;
+  border-bottom: 1px dashed var(--block-border);
 }
 table:not([class]) tr:hover {
   background: var(--block);
+}
+@media screen and (min-width: 667px) {
+  table:not([class]) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 667px) {
+  table:not([class]) {
+    display: block;
+  }
+  table:not([class]) tr {
+    word-break: keep-all;
+    white-space: nowrap;
+  }
 }
 *[ff=title] {
   font-family: system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif;
@@ -449,7 +478,7 @@ a.button.start.gradient {
   left: 50%;
   transform: translateX(-50%);
   max-width: 90%;
-  background-color: var(--block-border);
+  background-color: var(--card);
   color: var(--text-p1);
   font-size: 1rem;
   font-family: #fff8e1;
@@ -717,7 +746,7 @@ pre:not([class]):has(>code) {
   display: block;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  background: var(--block-border);
+  background: var(--block);
 }
 .md-text .highlight >table {
   overflow: auto;
@@ -753,6 +782,7 @@ pre:not([class]):has(>code) {
 }
 .md-text .highlight >table tr {
   background: transparent;
+  border: none;
 }
 .md-text .highlight >table tr:hover {
   background: transparent;
@@ -796,12 +826,15 @@ pre:not([class]):has(>code) {
   margin: 0;
   padding: 1em 0;
 }
+.md-text .gist .highlight pre {
+  background: none;
+}
 .md-text .gist .blob-code-inner {
   color: var(--text-p1);
   font-family: Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif;
 }
 .md-text .gist .gist-meta {
-  background: var(--block-border);
+  background: var(--block);
 }
 table:not([class]) {
   border-collapse: collapse;
@@ -3769,11 +3802,12 @@ a.tag-plugin.button:hover {
   min-width: 200px;
 }
 .md-text .tag-plugin.copy span {
-  line-height: 3;
-  padding: 0 1rem;
-  background: var(--block);
-  border-right: 1px solid var(--block-border);
-  color: var(--text-p3);
+  padding: 0.25rem 0.5rem;
+  margin: auto 0.5rem;
+  line-height: 1;
+  border-radius: 4px;
+  background: rgba(28,208,253,0.2);
+  color: #1cd0fd;
   font-family: Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif;
   font-size: 0.8125rem;
   font-weight: 700;
@@ -3787,11 +3821,18 @@ a.tag-plugin.button:hover {
   line-height: 3;
   text-indent: 1rem;
 }
+.md-text .tag-plugin.copy span+input.copy-area {
+  text-indent: 0;
+}
 .md-text .tag-plugin.copy button.copy-btn {
-  margin: 2px;
+  margin: 2px 2px 2px 0;
   border-radius: calc(8px - 2px);
   display: inline-block;
-  background: none;
+  background: var(--block);
+  transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
   line-height: 0;
   font-size: 1rem;
   padding: 0 0.75rem;
@@ -5088,16 +5129,31 @@ p>strong>span.tag-plugin.icon {
   margin: 0;
 }
 .tag-plugin.navbar {
-  padding: 0;
+  display: inline-flex;
+  background: var(--card);
+  border-radius: 8px;
+  z-index: inherit;
+  box-shadow: 0 0 8px rgba(0,0,0,0.04);
 }
-.tag-plugin.navbar:after {
-  left: 0;
-  right: 0;
+.tag-plugin.navbar a {
+  box-sizing: border-box;
+  padding: 0.25rem 1rem;
+  margin: 2px;
+  color: inherit;
+  border-radius: calc(8px - 1px);
+  transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
 }
-@media screen and (min-width: 667px) {
-  .tag-plugin.navbar nav a {
-    margin-top: 2px;
-  }
+.tag-plugin.navbar a+a {
+  margin-left: 0;
+}
+.tag-plugin.navbar a.active {
+  background: var(--block);
+}
+.tag-plugin.navbar a:hover {
+  background: var(--block);
 }
 .md-text .tag-plugin.note {
   position: relative;
@@ -5131,10 +5187,6 @@ p>strong>span.tag-plugin.icon {
 }
 .md-text .tag-plugin.note[color] code {
   background: none;
-}
-.md-text .tag-plugin.note:not([color]) .highlight,
-.md-text .tag-plugin.note:not([color]) pre {
-  background: var(--block-border);
 }
 .md-text .tag-plugin.note[child=codeblock] {
   padding: 0;
@@ -5326,16 +5378,6 @@ p>strong>span.tag-plugin.icon {
   padding-top: 0;
   padding-bottom: 0;
 }
-.tag-plugin.note table:not([class]) th,
-.tag-plugin.folding table:not([class]) th {
-  background: var(--block-border);
-}
-.tag-plugin.note table:not([class]) td,
-.tag-plugin.folding table:not([class]) td,
-.tag-plugin.note table:not([class]) th,
-.tag-plugin.folding table:not([class]) th {
-  border-color: var(--block-border);
-}
 .md-text .tag-plugin.poetry {
   display: flex;
   flex-direction: column;
@@ -5491,13 +5533,13 @@ p>strong>span.tag-plugin.icon {
   filter: blur(8px);
   transform: translateY(4px) scale(1.2, 1.5);
 }
-.tag-plugin.quote {
+.tag-plugin.blockquote {
   position: relative;
 }
-.tag-plugin.quote p:not([class]) {
+.tag-plugin.blockquote p:not([class]) {
   text-indent: 0 !important;
 }
-.tag-plugin.quote[indent='true'] p:not([class]) {
+.tag-plugin.blockquote[indent='true'] p:not([class]) {
   text-indent: calc(var(--fsp) * 2) !important;
 }
 .sites-wrap .grid-box {
@@ -6771,7 +6813,7 @@ details.toc[open] >div.body section .header+.doc_tree {
 }
 .widget-wrapper.post-list .widget-body a {
   font-size: 0.875rem;
-  padding: 8px 16px;
+  padding: 6px 16px;
   display: block;
   border-radius: 8px;
   color: var(--text-p1);
@@ -6978,7 +7020,7 @@ details.toc[open] >div.body section .header+.doc_tree {
 .widget-wrapper.toc .toc a {
   --padding: calc(var(--gap-padding) / 2);
   --padding-offset: calc(0 - var(--padding));
-  padding: 6px var(--padding);
+  padding: 4px var(--padding);
   margin: 0 var(--padding);
   color: var(--text-p3);
   display: block;
@@ -7591,8 +7633,20 @@ details.toc[open] >div.body section .header+.doc_tree {
 .l_body[type=story] .md-text.content h6 >a:first-child {
   display: none;
 }
-.l_body[type=story] .md-text.content >blockquote,
-.l_body[type=story] .md-text.content .tag-plugin.quote {
+.l_body[type=story] .md-text.content .poetry p:not([class]),
+.l_body[type=story] .md-text.content .okr p:not([class]),
+.l_body[type=story] .md-text.content .timeline p:not([class]),
+.l_body[type=story] .md-text.content li p:not([class]),
+.l_body[type=story] .md-text.content .article-footer p:not([class]) {
+  text-indent: 0;
+  text-align: left;
+}
+.l_body[type=story] .md-text.content p>img,
+.l_body[type=story] .md-text.content .tag-plugin.image .image-bg {
+  border-radius: 24px;
+}
+.l_body[type=story] .md-text.content>blockquote,
+.md-text.content .tag-plugin.blockquote {
   text-align: center;
   --inset: calc(var(--fsp) * 2);
   margin-left: var(--inset);
@@ -7601,10 +7655,10 @@ details.toc[open] >div.body section .header+.doc_tree {
   padding: 1rem 2rem;
   border-radius: 12px;
 }
-.l_body[type=story] .md-text.content >blockquote:before,
-.l_body[type=story] .md-text.content .tag-plugin.quote:before,
-.l_body[type=story] .md-text.content >blockquote:after,
-.l_body[type=story] .md-text.content .tag-plugin.quote:after {
+.l_body[type=story] .md-text.content>blockquote:before,
+.md-text.content .tag-plugin.blockquote:before,
+.l_body[type=story] .md-text.content>blockquote:after,
+.md-text.content .tag-plugin.blockquote:after {
   position: absolute;
   font-size: 2rem;
   background-color: rgba(28,208,253,0.25);
@@ -7618,8 +7672,8 @@ details.toc[open] >div.body section .header+.doc_tree {
   -webkit-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
 }
-.l_body[type=story] .md-text.content >blockquote:before,
-.l_body[type=story] .md-text.content .tag-plugin.quote:before {
+.l_body[type=story] .md-text.content>blockquote:before,
+.md-text.content .tag-plugin.blockquote:before {
   left: -0.3em;
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3C!-- Icon from BoxIcons Solid by Atisa - https://creativecommons.org/licenses/by/4.0/ --%3E%3Cpath fill='currentColor' d='M3.691 6.292C5.094 4.771 7.217 4 10 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.9 2.9 0 0 0 6.925 10H10a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2H3a1 1 0 0 1-1-1v-5l.003-2.919c-.009-.111-.199-2.741 1.688-4.789M20 20h-6a1 1 0 0 1-1-1v-5l.003-2.919c-.009-.111-.199-2.741 1.688-4.789C16.094 4.771 18.217 4 21 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.9 2.9 0 0 0 17.925 10H21a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2'/%3E%3C/svg%3E");
   -webkit-mask-repeat: no-repeat;
@@ -7630,8 +7684,8 @@ details.toc[open] >div.body section .header+.doc_tree {
   mask-position: center;
   mask-size: contain;
 }
-.l_body[type=story] .md-text.content >blockquote:after,
-.l_body[type=story] .md-text.content .tag-plugin.quote:after {
+.l_body[type=story] .md-text.content>blockquote:after,
+.md-text.content .tag-plugin.blockquote:after {
   right: -0.3em;
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3C!-- Icon from BoxIcons Solid by Atisa - https://creativecommons.org/licenses/by/4.0/ --%3E%3Cpath fill='currentColor' d='M20.309 17.708C22.196 15.66 22.006 13.03 22 13V5a1 1 0 0 0-1-1h-6c-1.103 0-2 .897-2 2v7a1 1 0 0 0 1 1h3.078a2.9 2.9 0 0 1-.429 1.396c-.508.801-1.465 1.348-2.846 1.624l-.803.16V20h1c2.783 0 4.906-.771 6.309-2.292m-11.007 0C11.19 15.66 10.999 13.03 10.993 13V5a1 1 0 0 0-1-1h-6c-1.103 0-2 .897-2 2v7a1 1 0 0 0 1 1h3.078a2.9 2.9 0 0 1-.429 1.396c-.508.801-1.465 1.348-2.846 1.624l-.803.16V20h1c2.783 0 4.906-.771 6.309-2.292'/%3E%3C/svg%3E");
   -webkit-mask-repeat: no-repeat;
@@ -7642,29 +7696,17 @@ details.toc[open] >div.body section .header+.doc_tree {
   mask-position: center;
   mask-size: contain;
 }
-.l_body[type=story] .md-text.content >blockquote p:not([class]),
-.l_body[type=story] .md-text.content .tag-plugin.quote p:not([class]) {
+.l_body[type=story] .md-text.content>blockquote p:not([class]),
+.md-text.content .tag-plugin.blockquote p:not([class]) {
   color: var(--text-p2);
   font-size: 17px;
   text-indent: 2em;
 }
-.l_body[type=story] .md-text.content >blockquote:hover:before,
-.l_body[type=story] .md-text.content .tag-plugin.quote:hover:before,
-.l_body[type=story] .md-text.content >blockquote:hover:after,
-.l_body[type=story] .md-text.content .tag-plugin.quote:hover:after {
+.l_body[type=story] .md-text.content>blockquote:hover:before,
+.md-text.content .tag-plugin.blockquote:hover:before,
+.l_body[type=story] .md-text.content>blockquote:hover:after,
+.md-text.content .tag-plugin.blockquote:hover:after {
   background-color: rgba(28,208,253,0.5);
-}
-.l_body[type=story] .md-text.content .poetry p:not([class]),
-.l_body[type=story] .md-text.content .okr p:not([class]),
-.l_body[type=story] .md-text.content .timeline p:not([class]),
-.l_body[type=story] .md-text.content li p:not([class]),
-.l_body[type=story] .md-text.content .article-footer p:not([class]) {
-  text-indent: 0;
-  text-align: left;
-}
-.l_body[type=story] .md-text.content p>img,
-.l_body[type=story] .md-text.content .tag-plugin.image .image-bg {
-  border-radius: 24px;
 }
 .l_body[type=story] .article.banner .content .bottom.only-title {
   justify-content: center;
@@ -9101,7 +9143,7 @@ a[data-fancybox] {
   border: none;
   padding: 6px 2rem;
   border-radius: 12px;
-  background: var(--block-border);
+  background: var(--block);
   color: var(--text-p1);
   line-height: 2;
   font-size: 14px;
