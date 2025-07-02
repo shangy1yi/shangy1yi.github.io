@@ -1906,6 +1906,7 @@ svg.loading {
 .loading-wrap {
   margin: 0;
   text-align: center;
+  align-content: center;
   background: var(--block);
   border-radius: 12px;
   position: relative;
@@ -2307,6 +2308,75 @@ div.toast.show {
   padding-top: 1rem;
   border-top: 1px solid var(--block-border);
 }
+.article-footer #contributors .header {
+  display: flex;
+  justify-content: space-between;
+}
+.article-footer #contributors .header a.edit {
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  color: inherit;
+  background: var(--block);
+  padding: 0 0.5rem;
+  border-radius: 8px;
+  transition: background 0.2s ease-out;
+  -moz-transition: background 0.2s ease-out;
+  -webkit-transition: background 0.2s ease-out;
+  -o-transition: background 0.2s ease-out;
+}
+.article-footer #contributors .header a.edit svg {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 4px;
+  color: var(--text-p4);
+  transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -webkit-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+}
+.article-footer #contributors .header a.edit span {
+  line-height: 1.5;
+  transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -webkit-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+}
+.article-footer #contributors .header a.edit:hover {
+  color: var(--theme);
+  background: var(--theme-a20);
+}
+.article-footer #contributors .header a.edit:hover svg {
+  color: var(--theme);
+}
+.article-footer #contributors .body .loading-wrap {
+  margin-top: 4px;
+  padding: 0;
+  height: 84px;
+}
+.article-footer #contributors .body .users-wrap .grid-box {
+  margin-top: 4px;
+  grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+  grid-gap: 4px;
+}
+.article-footer #contributors .body .users-wrap .grid-box:empty {
+  display: none;
+}
+.article-footer #contributors .body .users-wrap .user-card .card-link {
+  background: var(--block);
+  transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+}
+.article-footer #contributors .body .users-wrap .user-card .card-link:hover {
+  background: var(--theme-a20);
+  color: var(--theme);
+}
+.article-footer #contributors .body .users-wrap .user-card .card-link img {
+  width: 32px;
+  height: 32px;
+}
 .article-footer .social-wrap {
   grid-gap: 0.5rem 2rem;
   margin: 1rem 0 0.5rem;
@@ -2685,7 +2755,7 @@ div.toast.show {
   font-size: 1rem;
   font-weight: 700;
   background: var(--card);
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 2px 8px 0px rgba(0,0,0,0.03);
   color: var(--text-p3);
@@ -4705,7 +4775,7 @@ details.folding[child=iframe] >div.body {
   align-items: center;
   text-align: center;
   line-height: 1.2;
-  border-radius: 4px;
+  border-radius: 8px;
   overflow: hidden;
   position: relative;
   padding: 1rem 0.5rem;
@@ -6374,6 +6444,9 @@ p>strong>span.tag-plugin.icon {
 }
 .tag-plugin.timeline[api] .body pre code {
   font-size: 0.8125rem;
+}
+aside .tag-plugin.timeline[api] .body .lazy-box {
+  border-radius: 8px;
 }
 .tag-plugin.timeline[api] .body .footer {
   margin: 0 0 -0.5rem;
@@ -8967,6 +9040,7 @@ table a:not([class]):has(img):hover {
 .lazy-box {
   position: relative;
   overflow: hidden;
+  line-height: 0;
 }
 .lazy-box.async {
   background: var(--block);
@@ -9696,6 +9770,10 @@ a[data-fancybox] {
   padding: 0.5rem 1rem;
   margin: 0;
 }
+.cmt-body.artalk .artalk .atk-main-editor .atk-header .atk-editor-user,
+.cmt-body.artalk .artalk .atk-main-editor .atk-editor-user-wrap .atk-editor-user {
+  padding: 0;
+}
 .cmt-body.artalk .artalk .atk-main-editor .atk-editor-user-wrap:empty {
   visibility: hidden;
   padding: 0;
@@ -9813,6 +9891,7 @@ a[data-fancybox] {
 }
 .md-text .atk-main-editor>.atk-textarea-wrap>.atk-textarea {
   background: none;
+  padding: 0.5rem 1rem;
 }
 .md-text .atk-notify-wrap .atk-notify {
   border-radius: 8px;
