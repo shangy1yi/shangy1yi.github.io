@@ -1369,6 +1369,7 @@ a.button.start.gradient {
   -moz-transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
+  text-shadow: 0 0 4px #fff, 0 0 8px rgba(255,255,255,0.8), 0 0 16px rgba(255,255,255,0.6);
 }
 @media screen and (min-width: 667px) {
   .float-panel {
@@ -1378,6 +1379,21 @@ a.button.start.gradient {
 .float-panel:before,
 .float-panel:after {
   border-radius: 64px;
+}
+@media (prefers-color-scheme: dark) {
+  .float-panel {
+    text-shadow: 0 0 2px rgba(0,0,0,0.2), 0 0 4px rgba(0,0,0,0.4);
+  }
+}
+.float-panel nav a:not(.active,
+.float-panel :hover) {
+  filter: drop-shadow(0 0 0 #fff) drop-shadow(0 0 4px #fff);
+}
+@media (prefers-color-scheme: dark) {
+  .float-panel nav a:not(.active,
+  .float-panel :hover) {
+    filter: none;
+  }
 }
 .float-panel:before,
 .float-panel:after {
@@ -1394,16 +1410,21 @@ a.button.start.gradient {
 .float-panel:before {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  background: var(--bg-a20);
+  background: rgba(255,255,255,0.3);
+  margin: 1px;
+}
+@media (prefers-color-scheme: dark) {
+  .float-panel:before {
+    background: rgba(255,255,255,0.2);
+  }
 }
 .float-panel:after {
-  --blur-px: 24px;
-  --blur-sat: 500%;
-  background: var(--bg-a50);
+  --blur-px: 16px;
+  --blur-sat: 300%;
   backdrop-filter: saturate(var(--blur-sat)) blur(var(--blur-px));
   -webkit-backdrop-filter: saturate(var(--blur-sat)) blur(var(--blur-px));
-  mask: linear-gradient(#fff, 10%, rgba(255,255,255,0.05), 90%, #fff), linear-gradient(90deg, #fff, 10%, rgba(255,255,255,0.05), 90%, #fff);
-  -webkit-mask: linear-gradient(#fff, 10%, rgba(255,255,255,0.05), 90%, #fff), linear-gradient(90deg, #fff, 10%, rgba(255,255,255,0.05), 90%, #fff);
+  mask: linear-gradient(#fff, 20%, transparent, 80%, #fff), linear-gradient(90deg, #fff, 20%, transparent, 80%, #fff);
+  -webkit-mask-image: linear-gradient(#fff, 20%, transparent, 80%, #fff), linear-gradient(90deg, #fff, 20%, transparent, 80%, #fff);
   box-shadow: inset 0 0 4px 1px rgba(255,255,255,0.5);
   transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -1412,8 +1433,7 @@ a.button.start.gradient {
 }
 @media (prefers-color-scheme: dark) {
   .float-panel:after {
-    opacity: 0.4;
-    background: var(--bg-a20);
+    box-shadow: inset 0 0 2px 1px rgba(255,255,255,0.2);
   }
 }
 .float-panel button {
@@ -2666,6 +2686,22 @@ div.toast.show {
   -moz-transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
+  text-shadow: 0 0 4px #fff, 0 0 8px rgba(255,255,255,0.8), 0 0 16px rgba(255,255,255,0.6);
+}
+@media (prefers-color-scheme: dark) {
+  .navbar-blur {
+    text-shadow: 0 0 2px rgba(0,0,0,0.2), 0 0 4px rgba(0,0,0,0.4);
+  }
+}
+.navbar-blur nav a:not(.active,
+.navbar-blur :hover) {
+  filter: drop-shadow(0 0 0 #fff) drop-shadow(0 0 4px #fff);
+}
+@media (prefers-color-scheme: dark) {
+  .navbar-blur nav a:not(.active,
+  .navbar-blur :hover) {
+    filter: none;
+  }
 }
 .navbar-blur:before,
 .navbar-blur:after {
@@ -2682,16 +2718,21 @@ div.toast.show {
 .navbar-blur:before {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  background: var(--bg-a20);
+  background: rgba(255,255,255,0.3);
+  margin: 1px;
+}
+@media (prefers-color-scheme: dark) {
+  .navbar-blur:before {
+    background: rgba(255,255,255,0.2);
+  }
 }
 .navbar-blur:after {
-  --blur-px: 24px;
-  --blur-sat: 500%;
-  background: var(--bg-a50);
+  --blur-px: 16px;
+  --blur-sat: 300%;
   backdrop-filter: saturate(var(--blur-sat)) blur(var(--blur-px));
   -webkit-backdrop-filter: saturate(var(--blur-sat)) blur(var(--blur-px));
-  mask: linear-gradient(#fff, 10%, rgba(255,255,255,0.05), 90%, #fff), linear-gradient(90deg, #fff, 10%, rgba(255,255,255,0.05), 90%, #fff);
-  -webkit-mask: linear-gradient(#fff, 10%, rgba(255,255,255,0.05), 90%, #fff), linear-gradient(90deg, #fff, 10%, rgba(255,255,255,0.05), 90%, #fff);
+  mask: linear-gradient(#fff, 20%, transparent, 80%, #fff), linear-gradient(90deg, #fff, 20%, transparent, 80%, #fff);
+  -webkit-mask-image: linear-gradient(#fff, 20%, transparent, 80%, #fff), linear-gradient(90deg, #fff, 20%, transparent, 80%, #fff);
   box-shadow: inset 0 0 4px 1px rgba(255,255,255,0.5);
   transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -2700,8 +2741,7 @@ div.toast.show {
 }
 @media (prefers-color-scheme: dark) {
   .navbar-blur:after {
-    opacity: 0.4;
-    background: var(--bg-a20);
+    box-shadow: inset 0 0 2px 1px rgba(255,255,255,0.2);
   }
 }
 .navbar-container {
@@ -2749,7 +2789,7 @@ div.toast.show {
   -o-transition: all 0.2s ease-out;
 }
 .navbar nav a:hover {
-  background: var(--bg-a100);
+  background: var(--bg-a50);
 }
 .navbar nav a.active,
 .navbar nav a:hover {
@@ -2757,7 +2797,7 @@ div.toast.show {
 }
 .navbar nav a.active {
   background: var(--bg-a60);
-  box-shadow: 0 0 2px 0px rgba(0,0,0,0.04), 0 0 8px 0px rgba(0,0,0,0.04);
+  box-shadow: 0 0 1px rgba(0,0,0,0.04), 0 0 2px rgba(0,0,0,0.04), 0 0 4px rgba(0,0,0,0.08);
   cursor: default;
   pointer-events: none;
   backdrop-filter: saturate(300%);
@@ -8468,7 +8508,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   font-weight: 500;
 }
 .l_body[type='tech'] article.content h2 >a:first-child:before {
-  content: '⌘';
+  content: '#';
 }
 .l_body[type='tech'] article.content h3 >a:first-child:before {
   content: '=';
@@ -9131,6 +9171,8 @@ body>.sitebg .siteblur:hover {
   margin-bottom: var(--gap-p);
 }
 .md-text iframe {
+  margin-left: auto;
+  margin-right: auto;
   display: block;
 }
 .md-text.content blockquote h2,
