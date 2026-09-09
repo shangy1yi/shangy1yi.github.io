@@ -73,7 +73,7 @@
 <p>于是我做了一个 Chrome 扩展：<strong>Curator（策书）</stron]]>
     </summary>
     <title>Curator（策书）：本地优先的 Chrome 书签管理与 AI 整理扩展</title>
-    <updated>2026-09-08T02:40:23.581Z</updated>
+    <updated>2026-09-09T02:40:18.352Z</updated>
   </entry>
   <entry>
     <author>
@@ -81,8 +81,8 @@
     </author>
     <category term="站主的瞎话" scheme="https://blog.syouiti.com/categories/%E7%AB%99%E4%B8%BB%E7%9A%84%E7%9E%8E%E8%AF%9D/"/>
     <category term="ai" scheme="https://blog.syouiti.com/tags/ai/"/>
-    <category term="ollama" scheme="https://blog.syouiti.com/tags/ollama/"/>
     <category term="mac" scheme="https://blog.syouiti.com/tags/mac/"/>
+    <category term="ollama" scheme="https://blog.syouiti.com/tags/ollama/"/>
     <content>
       <![CDATA[<p><em>前言：Ollama 默认将模型下载到其内部数据目录<code>~/.ollama/models</code>，但mac的存储空间又十分金贵，网上找了很久也没找到在mac上改ollama默认模型下载目录的办法，摸索了一个方法在 macOS 上使用 Ollama 将模型下载到外置硬盘</em></p><p><img src="https://cdn.jsdelivr.net/gh/sy0u1ti/picx-images-hosting@master/image.491atwtfvd.webp" alt="image"></p><h3 id="使用符号链接-Symbolic-Link"><a href="#使用符号链接-Symbolic-Link" class="headerlink" title="使用符号链接 (Symbolic Link)"></a>使用符号链接 (Symbolic Link)</h3><ul><li><p><strong>步骤 1：将 Ollama 默认模型目录移动到外置硬盘</strong></p><ol><li>找到 Ollama 的默认模型目录。通常位于 <code>~/.ollama/models</code>。</li><li>将 <code>models</code> 目录复制或移动到你的外置硬盘上。例如，假设你的外置硬盘挂载在 <code>/Volumes/ExternalDrive</code>，你可以将 <code>models</code> 目录移动到 <code>/Volumes/ExternalDrive/ollama_models</code>。</li></ol></li><li><p><strong>步骤 2：创建符号链接</strong></p><ol><li><p>打开终端。</p></li><li><p>使用 <code>ln -s</code> 命令创建符号链接。命令格式如下：</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ln</span> -s &lt;目标路径&gt; &lt;链接路径&gt;</span><br></pre></td></tr></tbody></table></figure></li><li><p>在你的例子中，命令应该是：</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ln</span> -s /Volumes/ExternalDrive/ollama_models ~/.ollama/models</span><br></pre></td></tr></tbody></table></figure></li></ol><p>这会在 <code>~/.ollama</code> 目录下创建一个名为 <code>models</code> 的符号链接，指向外置硬盘上的 <code>ollama_models</code> 目录。</p></li><li><p><strong>步骤 3：验证</strong></p><p>现在，当你使用 Ollama 下载模型时，它会认为模型被下载到了 <code>~/.ollama/models</code>，但实际上文件会被保存到外置硬盘上的 <code>/Volumes/ExternalDrive/ollama_models</code>。</p></li></ul>]]>
     </content>
